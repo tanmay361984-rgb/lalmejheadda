@@ -1,0 +1,163 @@
+name: OWASP ZAP DAST Scan
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  zap:
+    name: ZAP Baseline DAST
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+
+      - name: Run OWASP ZAP Baseline Scan
+        uses: zaproxy/action-baseline@de8ad967d3548d44ef623df22cf95c3b0baf8b25 # v0.15.0
+        continue-on-error: true
+        with:
+          target: https://lightblue-barracuda-389291.hostingersite.com
+          allow_issue_writing: false
+          fail_action: false
+          artifact_name: zap-baseline-report
+          cmd_options: "-I -j"
+
+      - name: Create SARIF directory
+        if: always()
+        run: mkdir -p results
+
+      - name: Convert ZAP JSON to SARIF
+        if: always()
+        shell: python
+        run: |
+          import json
+          import os
+
+          source = "report_json.json"
+          output = "results/zap-results.sarif"
+
+          if not os.path.exists(source):
+              print("ZAP JSON report was not generated.")
+              raise SystemExit(0)
+
+          with open(source, "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          rules = {}
+          results = []
+
+          def level(riskcode):
+              return {
+                  "0": "note",
+                  "1": "note",
+                  "2": "warning",
+                  "3": "error"
+              }.get(str(riskcode), "warning")
+
+          for site in data.get("site", []):
+              site_name = site.get("@name", "")
+
+              for alert in site.get("alerts", []):
+                  plugin_id = str(alert.get("pluginid", "zap-unknown"))
+                  alert_name = alert.get("alert", "ZAP Security Alert")
+                  description = alert.get("desc", "")
+                  solution = alert.get("solution", "")
+                  risk_desc = alert.get("riskdesc", "")
+                  confidence = alert.get("confidence", "")
+
+                  rules[plugin_id] = {
+                      "id": plugin_id,
+                      "name": alert_name,
+                      "shortDescription": {
+                          "text": alert_name
+                      },
+                      "fullDescription": {
+                          "text": description
+                      },
+                      "help": {
+                          "text": solution
+                      },
+                      "properties": {
+                          "risk": risk_desc,
+                          "confidence": confidence
+                      }
+                  }
+
+                  instances = alert.get("instances", [])
+
+                  if not instances:
+                      instances = [{"uri": site_name}]
+
+                  for instance in instances:
+                      uri = (
+                          instance.get("uri")
+                          or instance.get("url")
+                          or site_name
+                      )
+
+                      message = alert_name
+
+                      if risk_desc:
+                          message += " - " + risk_desc
+
+                      results.append({
+                          "ruleId": plugin_id,
+                          "level": level(alert.get("riskcode", 1)),
+                          "message": {
+                              "text": message
+                          },
+                          "locations": [
+                              {
+                                  "physicalLocation": {
+                                      "artifactLocation": {
+                                          "uri": uri
+                                      }
+                                  }
+                              }
+                          ]
+                      })
+
+          sarif = {
+              "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+              "version": "2.1.0",
+              "runs": [
+                  {
+                      "tool": {
+                          "driver": {
+                              "name": "OWASP ZAP",
+                              "informationUri": "https://www.zaproxy.org/",
+                              "version": "2.x",
+                              "rules": list(rules.values())
+                          }
+                      },
+                      "results": results
+                  }
+              ]
+          }
+
+          with open(output, "w", encoding="utf-8") as f:
+              json.dump(sarif, f, indent=2)
+
+          print(f"Created {output}")
+          print(f"ZAP findings: {len(results)}")
+
+      - name: Upload ZAP SARIF to GitHub Code Scanning
+        if: always() && hashFiles('results/zap-results.sarif') != ''
+        uses: github/codeql-action/upload-sarif@1190a975f95ce23525efb6a3fc21ea29567c1b52 # v3.38.2
+        with:
+          sarif_file: results/zap-results.sarif
+          category: zap-dast
+
+      - name: Upload ZAP reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: zap-dast-reports
+          path: |
+            report_html.html
+            report_json.json
+            report_md.md
