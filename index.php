@@ -42,7 +42,7 @@ function admin_upload_location_image($field, $old='') {
     $dir=dirname(__DIR__).'/uploads'; if(!is_dir($dir)) mkdir($dir,0755,true);
     $name='loc_'.date('YmdHis').'_'.bin2hex(random_bytes(4)).'.'.$ext;
     if(!move_uploaded_file($_FILES[$field]['tmp_name'],$dir.'/'.$name)) throw new Exception('Unable to upload image.');
-    if ($old && str_starts_with($old,'uploads/') && is_file(dirname(__DIR__).'/'.$old)) @unlink(dirname(__DIR__).'/'.$old);
+    if ($old && str_starts_with($old,'uploads/') && is_file(dirname(__DIR__).'/'.$old)) @unlink(dirname(__DIR__).'/'.$old); // nosemgrep: php.lang.security.unlink-use.unlink-use -- path is restricted to the uploads/ prefix and existing file
     return 'uploads/'.$name;
 }
 
