@@ -1,0 +1,8 @@
+function acceptTerms(){localStorage.setItem('termsAccepted','1');document.getElementById('termsModal').classList.add('hidden');document.getElementById('userModal').classList.remove('hidden')}
+async function saveGuest(){
+let n=document.getElementById('guestName').value.trim(),w=document.getElementById('guestWhats').value.trim();
+if(!n||!w){alert('Please enter name and WhatsApp number');return}
+let btn=document.querySelector('#userModal button'); if(btn){btn.disabled=true;btn.innerText='Saving...'}
+try{let fd=new FormData();fd.append('name',n);fd.append('whatsapp',w);let r=await fetch('register.php',{method:'POST',body:fd});let d=await r.json();if(!d.ok)throw new Error(d.message||'Unable to save registration');localStorage.setItem('guest',JSON.stringify({name:n,whatsapp:w}));document.getElementById('userModal').classList.add('hidden')}catch(e){alert(e.message||'Registration could not be saved. Please try again.')}finally{if(btn){btn.disabled=false;btn.innerText='Continue'}}
+}
+document.addEventListener('DOMContentLoaded',()=>{let t=localStorage.getItem('termsAccepted'),g=localStorage.getItem('guest');let tm=document.getElementById('termsModal'),um=document.getElementById('userModal');if(tm){if(t){tm.classList.add('hidden');if(!g)um.classList.remove('hidden')} }document.querySelectorAll('.seat').forEach(b=>b.onclick=()=>{b.classList.toggle('selected');let s=[...document.querySelectorAll('.seat.selected')].map(x=>x.dataset.seat);document.getElementById('seatsInput').value=s.join(',');document.getElementById('seatInfo').innerText=s.length?'Selected seats: '+s.join(', '):'No seats selected'});});

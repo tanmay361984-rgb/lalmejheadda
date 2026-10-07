@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#08131b"/><stop offset=".55" stop-color="#173646"/><stop offset="1" stop-color="#a56d2d"/></linearGradient>
+<linearGradient id="river"><stop stop-color="#102c3a"/><stop offset="1" stop-color="#315c70"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#sky)"/><circle cx="1230" cy="210" r="115" fill="#f5b400" opacity=".9"/>
+<path d="M0 560 C300 500 500 610 780 550 C1040 495 1300 570 1600 520 V900 H0Z" fill="url(#river)"/>
+<g fill="#101a20" stroke="#f5b400" stroke-width="5"><path d="M120 610V390h80v220M145 390v-80h30v80M245 610V330h100v280M380 610V420h85v190M520 610V270h130v340M565 270v-70h40v70M700 610V360h100v250M850 610V250h170v360M900 250l35-120 35 120M1100 610V330h130v280M1270 610V410h90v200M1410 610V290h120v320"/></g>
+<path d="M0 690 Q300 640 650 700 T1600 680 V900 H0Z" fill="#091218" opacity=".8"/>
+<text x="95" y="150" fill="white" font-family="TCCC" font-size="42" letter-spacing="12">DISCOVER</text>
+<text x="90" y="270" fill="#f5b400" font-family="TCCC" font-size="125" font-weight="bold">KOLKATA</text>
+<text x="95" y="335" fill="white" font-family="TCCC" font-size="28">13 ICONIC LOCATIONS • ONE UNFORGETTABLE EXPERIENCE</text></svg>

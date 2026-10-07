@@ -1,0 +1,143 @@
+/* V94 — independent artwork pages. No auto-slide. Each page owns its header/artwork/nav/footer. */
+:root{--v94-red:#e41e2b;--v94-white:#fff;--v94-black:#111;--v94-header:76px;--v94-nav:52px}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#111;overflow-x:hidden}
+body{min-height:100vh}
+.site-header-v94{height:var(--v94-header);min-height:var(--v94-header);background:#fff;display:flex;align-items:center;justify-content:center;position:relative;z-index:1000;border-bottom:1px solid rgba(0,0,0,.08)}
+.site-header-v94 .brandLogo{display:flex;align-items:center;justify-content:center;width:190px;height:60px;text-decoration:none}
+.site-header-v94 .brandLogo img{display:block;width:auto;height:52px;max-width:170px;object-fit:contain}
+.lal-page-v94{position:relative;width:100%}
+.experience-page-v94{display:none;position:relative;width:100%;min-height:calc(100vh - var(--v94-header));background:#fff;overflow-x:hidden;overflow-y:auto;padding-bottom:0;scroll-behavior:smooth}
+.experience-page-v94.is-active{display:block}
+.artwork-page-v94{width:100%;line-height:0;background:#fff;display:flex;justify-content:center;align-items:flex-start;overflow:hidden}
+.artwork-page-v94 picture,.artwork-page-v94 img{display:block;width:100%;height:auto}
+.artwork-page-v94 img{max-width:100%;object-fit:contain}
+.artwork-s2-v94 img,.artwork-s3-v94 img,.artwork-s5-v94 img{width:100%;height:auto}
+.page-content-v94{width:100%;background:#fff}
+.floating-nav-v94{position:fixed;left:0;right:0;bottom:26px;z-index:5000;display:flex;justify-content:space-between;align-items:center;padding:0 24px;pointer-events:none}
+.page-nav-v94{pointer-events:auto;border:0;background:var(--v94-red);color:#fff;font:800 14px/1 TCCC,Arial,sans-serif;letter-spacing:.06em;padding:14px 20px;min-width:110px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.22);cursor:pointer}
+.page-nav-v94:hover{transform:translateY(-1px)}
+.page-nav-v94:disabled{visibility:hidden;pointer-events:none}
+.page-footer-v94{width:100%;background:#fff;color:#111;border-top:1px solid #e41e2b;min-height:120px;display:flex;align-items:center;justify-content:center;text-align:center;padding:26px 20px 34px;position:relative;z-index:20}
+.footer-inner-v94{display:flex;flex-direction:column;align-items:center;gap:7px;max-width:1000px}
+.footer-brand-v94{font-size:17px;font-weight:900;color:var(--v94-red);letter-spacing:.03em}
+.footer-copy-v94{font-size:11px;line-height:1.4;color:#222}
+.footer-links-v94{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:4px 0}
+.footer-links-v94 a{color:var(--v94-red);font-size:11px;font-weight:700;text-decoration:none}
+.footer-links-v94 a:hover{text-decoration:underline}
+/* Booking page: let the existing V82 artwork/functionality breathe naturally instead of fixed 667px clipping. */
+.page-booking-v94 .design-s4{height:auto!important;min-height:0!important;padding:32px 0 42px!important;overflow:visible!important;background:#fff!important}
+.page-booking-v94 .section4-shell{height:auto!important;min-height:0!important;max-width:1185px!important;width:calc(100% - 32px)!important;margin:0 auto!important;align-items:start!important}
+.page-booking-v94 .section4-hotspot{height:328px!important;margin:120px 0 0!important}
+.page-booking-v94 .section4-booking-card{height:auto!important;min-height:667px!important;max-height:none!important;overflow:visible!important}
+.page-booking-v94 .section4-location-head{height:auto!important;min-height:219px!important}
+.page-booking-v94 .section4-booking-card form{height:auto!important;overflow:visible!important}
+.page-booking-v94 .section4-booking-card .book-step{height:auto!important;min-height:0!important}
+.page-booking-v94 .section4-booking-card .mini-seat-grid{height:auto!important;min-height:95px!important;max-height:none!important;overflow:visible!important}
+.page-booking-v94 .section4-booking-card .date-buttons{overflow:visible!important;flex-wrap:wrap!important}
+.page-booking-v94 .section4-booking-card .slot-pills{max-height:none!important;overflow:visible!important}
+@media(max-width:1000px){
+  :root{--v94-header:68px}
+  .site-header-v94 .brandLogo{height:54px}.site-header-v94 .brandLogo img{height:45px;max-width:150px}
+  .experience-page-v94{min-height:calc(100vh - var(--v94-header))}
+  .floating-nav-v94{bottom:18px;padding:0 14px}
+  .page-nav-v94{font-size:12px;min-width:94px;padding:12px 15px}
+  .page-booking-v94 .design-s4{padding:20px 0 55px!important}
+  .page-booking-v94 .section4-shell{width:calc(100% - 24px)!important;grid-template-columns:1fr!important;gap:18px!important}
+  .page-booking-v94 .section4-hotspot{width:100%!important;height:360px!important;margin:0!important}
+  .page-booking-v94 .section4-booking-card{width:100%!important;min-height:0!important}
+}
+@media(max-width:767px){
+  :root{--v94-header:62px}
+  .site-header-v94{height:var(--v94-header);min-height:var(--v94-header)}
+  .site-header-v94 .brandLogo{width:150px;height:52px}.site-header-v94 .brandLogo img{height:42px;max-width:135px}
+  .artwork-page-v94 img{width:100%;height:auto;max-width:none}
+  .floating-nav-v94{bottom:12px;padding:0 10px}
+  .page-nav-v94{font-size:10px;min-width:78px;padding:10px 12px}
+  .page-footer-v94{min-height:132px;padding:22px 14px 42px}
+  .footer-brand-v94{font-size:15px}.footer-copy-v94{font-size:9px}.footer-links-v94{gap:15px}.footer-links-v94 a{font-size:9px}
+  .page-booking-v94 .design-s4{padding:14px 0 48px!important}
+  .page-booking-v94 .section4-shell{width:100%!important;padding:0 10px!important;display:flex!important;flex-direction:column!important}
+  .page-booking-v94 .section4-hotspot{height:auto!important;min-height:0!important;aspect-ratio:1152/2048!important;margin:0!important;overflow:hidden!important}
+  .page-booking-v94 .section4-hotspot .kolkata-map-art{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;right:auto!important;top:auto!important}
+  .page-booking-v94 .section4-hotspot .kolkata-map-art img{width:100%!important;height:100%!important;object-fit:contain!important}
+  .page-booking-v94 .hotspot-copy{z-index:8}
+  .page-booking-v94 .hotspot-footer{z-index:9}
+  .page-booking-v94 .section4-booking-card{padding:14px 12px 20px!important;width:100%!important}
+  .page-booking-v94 .section4-location-head{display:grid!important;grid-template-columns:1fr!important;grid-template-rows:auto auto!important;min-height:0!important;height:auto!important}
+  .page-booking-v94 .section4-map{grid-column:1!important;grid-row:auto!important;width:100%!important;height:210px!important}
+  .page-booking-v94 .section4-direction{grid-column:1!important;grid-row:auto!important}
+  .page-booking-v94 .section4-booking-card .date-buttons{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;overflow:visible!important}
+  .page-booking-v94 .section4-booking-card .date-btn{width:100%!important;min-width:0!important}
+  .page-booking-v94 .section4-booking-card .mini-seat-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-template-rows:none!important;grid-auto-rows:25px!important;height:auto!important;min-height:0!important}
+}
+@media(min-width:768px){
+  .artwork-page-v94{min-height:calc(100vh - var(--v94-header))}
+  .artwork-page-v94 img{min-height:calc(100vh - var(--v94-header));object-fit:contain;object-position:center top}
+}
+
+.legal-page-v94{min-height:calc(100vh - var(--v94-header));background:#fff;padding:56px 20px}.legal-inner-v94{max-width:900px;margin:0 auto}.legal-inner-v94 h1{font-size:42px;line-height:1;color:#e41e2b;margin:0 0 18px}.legal-inner-v94 h2{font-size:21px;color:#e41e2b;margin:28px 0 8px}.legal-inner-v94 p{font-size:15px;line-height:1.65;margin:0 0 12px;color:#222}.legal-inner-v94 a{color:#e41e2b}@media(max-width:767px){.legal-page-v94{padding:34px 16px}.legal-inner-v94 h1{font-size:30px}.legal-inner-v94 h2{font-size:18px}.legal-inner-v94 p{font-size:13px;line-height:1.55}}
+
+.page-index-v94>.global-header-v94{display:none}.page-header-v94{display:flex!important}
+.experience-page-v94 .page-header-v94{position:relative;z-index:1000}
+
+/* V95 — Page 4 booking gate + confirmation popup */
+.gated-page-v94.page-locked-v95 { pointer-events:none; }
+.gated-page-v94.page-locked-v95 .artwork-page-v94,
+.gated-page-v94.page-locked-v95 .floating-nav-v94,
+.gated-page-v94.page-locked-v95 footer,
+.gated-page-v94.page-locked-v95 .page-footer-v94 { visibility:hidden !important; }
+.booking-confirm-modal-v95 { position:fixed; inset:0; z-index:99999; display:none; align-items:center; justify-content:center; padding:24px; }
+.booking-confirm-modal-v95.is-open { display:flex; }
+.booking-confirm-overlay { position:absolute; inset:0; background:rgba(0,0,0,.62); backdrop-filter:blur(4px); }
+.booking-confirm-card { position:relative; z-index:2; width:min(520px,94vw); max-height:88vh; overflow:auto; background:#fff; border-radius:18px; padding:34px 30px 28px; box-shadow:0 24px 80px rgba(0,0,0,.3); color:#111; text-align:center; }
+.booking-confirm-close { position:absolute; top:10px; right:14px; width:38px; height:38px; border:0; border-radius:50%; background:#f2f2f2; color:#111; font-size:27px; line-height:1; cursor:pointer; }
+.booking-confirm-eyebrow { display:block; font-size:12px; letter-spacing:2px; font-weight:800; color:#e41e2b; margin-bottom:8px; }
+.booking-confirm-card h2 { margin:0 0 14px; color:#e41e2b; font-family:TCCCCondensed,TCCCHeadline,Arial,sans-serif; font-size:32px; line-height:1; }
+.booking-confirm-code { display:inline-block; margin:6px 0 18px; padding:9px 16px; border:2px solid #e41e2b; border-radius:8px; color:#e41e2b; font-weight:800; letter-spacing:1px; }
+.booking-confirm-details { text-align:left; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:12px 4px; line-height:1.65; }
+.booking-confirm-details div { padding:3px 0; }
+.booking-confirm-ok { margin-top:20px; border:0; background:#e41e2b; color:#fff; padding:13px 20px; border-radius:7px; font-weight:800; cursor:pointer; }
+@media (max-width:767px){ .booking-confirm-modal-v95{padding:14px}.booking-confirm-card{width:100%;padding:30px 20px 22px;max-height:90svh}.booking-confirm-card h2{font-size:27px}.booking-confirm-code{font-size:14px} }
+
+/* V96 - supplied Section 3 artwork: desktop 2048x1152, mobile 1151x2048 */
+@media (min-width:768px){.artwork-s3-v94 picture,.artwork-s3-v94 img{width:100%;height:auto;display:block}.artwork-s3-v94 img{object-fit:contain;object-position:center top}}
+@media (max-width:767px){.artwork-s3-v94 picture,.artwork-s3-v94 img{width:100%;height:auto;display:block}.artwork-s3-v94 img{object-fit:contain;object-position:center top}}
+
+/* V97 hotfix: restore the actual page-rebuild stylesheet after V96 asset update. */
+html,body{width:100%;max-width:100%;overflow-x:hidden!important;}
+.experience-page-v94{box-sizing:border-box;}
+.artwork-page-v94 picture{width:100%;max-width:100%;display:block;}
+.artwork-page-v94 img{display:block;max-width:100%;}
+@media(max-width:767px){.artwork-page-v94,.artwork-page-v94 picture{width:100%;}.artwork-page-v94 img{width:100%;height:auto;object-fit:contain;}}
+/* V100 SMS OTP authentication */
+.sms-auth-box{max-width:520px!important}
+.sms-eyebrow{display:inline-block;font-size:11px;font-weight:900;letter-spacing:2px;color:#e41e2b;margin-bottom:10px}
+.sms-auth-box h2{margin-bottom:8px}
+.sms-auth-box p{margin:0 0 18px}
+.mobile-input-wrap{display:flex;align-items:center;border:1px solid #ddd;border-radius:12px;overflow:hidden;background:#fff;margin:10px 0}
+.mobile-input-wrap>span{padding:15px 12px;font-weight:800;border-right:1px solid #eee;background:#fafafa}
+.mobile-input-wrap input{border:0!important;margin:0!important;border-radius:0!important;outline:0;width:100%!important}
+.sms-auth-box .otp-input{text-align:center;font-size:24px;letter-spacing:8px;font-weight:800}
+.sms-auth-box .otp-secondary{background:#fff!important;color:#e41e2b!important;border:1px solid #e41e2b!important}
+.sms-auth-box button:disabled{opacity:.55;cursor:not-allowed}
+
+/* V102.4 — OTP first, then compact signup form. No terms acceptance gate. */
+.signup-auth-box{max-width:440px!important;text-align:center!important}
+.signup-auth-box .signup-mark{width:44px;height:44px;margin:2px auto 14px;border-radius:50%;display:grid;place-items:center;background:#e41e2b;color:#fff;font-size:24px;font-weight:900}
+.signup-auth-box input:not(.otp-input){box-sizing:border-box;width:100%!important;margin:7px 0!important;padding:14px 15px!important;border:1px solid #e8e8e8!important;border-radius:14px!important;background:#f7f7f7!important;outline:0!important}
+.signup-auth-box input:not(.otp-input):focus{border-color:#e41e2b!important;background:#fff!important}
+.signup-auth-box .compact-mobile{margin:7px 0!important;background:#f7f7f7!important;border-color:#e8e8e8!important}
+.signup-auth-box .compact-mobile input{background:transparent!important}
+.signup-auth-box .otp-input{box-sizing:border-box;width:100%!important;margin:7px 0!important;padding:14px!important;border:1px solid #e8e8e8!important;border-radius:14px!important;background:#f7f7f7!important}
+.signup-auth-box #verifyOtpBtn{width:100%!important;border-radius:14px!important;margin-top:7px!important}
+.signup-auth-box .otp-secondary{width:100%!important;border-radius:14px!important;margin-top:8px!important}
+@media(max-width:767px){.signup-auth-box{width:min(92vw,440px)!important;padding:26px 20px!important}.signup-auth-box h2{font-size:30px!important}}
+
+/* V102.5 AUTH FLOW: mobile -> OTP verify -> signup */
+.signup-auth-box .otp-link-btn{width:100%!important;background:transparent!important;color:#e41e2b!important;border:0!important;margin-top:8px!important;font-size:12px!important;font-weight:800!important;letter-spacing:.04em!important}
+.signup-auth-box .consent-check{display:flex!important;flex-direction:row!important;align-items:flex-start!important;justify-content:flex-start!important;gap:8px!important;width:100%!important;text-align:left!important;margin:10px 2px 12px!important;font-size:12px!important;line-height:1.45!important;color:#555!important}
+.signup-auth-box .consent-check input{display:block!important;flex:0 0 15px!important;width:15px!important;height:15px!important;min-width:15px!important;max-width:15px!important;margin:2px 0 0!important;padding:0!important;accent-color:#e41e2b!important}
+.signup-auth-box .consent-check label{display:block!important;flex:1 1 auto!important;width:auto!important;margin:0!important;padding:0!important;text-align:left!important;font-size:12px!important;line-height:1.45!important;color:#555!important;font-weight:400!important}
+.signup-auth-box .consent-check a{color:#e41e2b!important;text-decoration:underline!important;font-weight:700!important}
+.signup-auth-box #signupSubmitBtn{width:100%!important;border-radius:14px!important;margin-top:5px!important}

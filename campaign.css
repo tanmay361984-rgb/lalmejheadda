@@ -1,0 +1,79 @@
+@font-face{font-family:TCCCText;src:url('/assets/fonts/TCCC-UnityText-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:TCCCText;src:url('/assets/fonts/TCCC-UnityText-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:TCCCHeadline;src:url('/assets/fonts/TCCC-UnityHeadline-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:TCCCHeadline;src:url('/assets/fonts/TCCC-UnityHeadline-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:TCCCHeadline;src:url('/assets/fonts/TCCC-UnityHeadline-Black.ttf') format('truetype');font-weight:900;font-display:swap}
+@font-face{font-family:TCCCCondensed;src:url('/assets/fonts/TCCC-UnityCondensedPC-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+:root{--coke:#e41e2b;--coke-dark:#b80f1b;--paper:#fff;--cream:#fff7f5;--ink:#151515}
+html,body{font-family:TCCCText,Arial,sans-serif!important;background:#fff;color:var(--ink)}
+body *{font-family:TCCCText,Arial,sans-serif!important}
+h1,h2,h3,h4,.hero h1,.section h2,.bookingHead h2,.lb-head h2,.kx-location-hero h1{font-family:TCCCHeadline,Arial,sans-serif!important}
+header{height:78px!important;padding:0 7%!important;background:#fff!important;border-bottom:1px solid #eee!important;box-shadow:0 4px 18px rgba(0,0,0,.06)!important}
+.brandLogo{width:190px!important;height:58px!important}.brandLogo img{width:100%!important;height:100%!important;object-fit:contain!important}
+nav a{font-weight:700!important;border-radius:4px!important;color:#151515!important}nav a:hover{background:var(--coke)!important;color:#fff!important}
+/* Campaign home */
+.hero-v19{min-height:690px!important;padding:92px 8% 82px!important;align-items:center!important;background-color:var(--coke)!important;background-image:linear-gradient(90deg,rgba(110,0,8,.28),rgba(228,30,43,.08)),url('/assets/campaign-wave.jpg')!important;background-size:cover!important;background-position:center!important;color:#fff!important}
+.hero-v19:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(100,0,5,.25),transparent 68%);pointer-events:none}
+.hero-content-v19{position:relative!important;z-index:3!important;max-width:760px!important}
+.hero-v19 h1{font-family:TCCCHeadline,Arial,sans-serif!important;font-weight:900!important;font-size:clamp(48px,6vw,82px)!important;line-height:.94!important;letter-spacing:-.02em!important;margin:0 0 24px!important;max-width:760px!important}
+.hero-v19 h1 .hero-welcome,.hero-v19 h1 .hero-adda{display:block!important}
+.hero-v19 h1 .hero-welcome{font-size:.72em!important}
+.hero-v19 h1 .hero-adda{font-size:1em!important}
+.hero-v19 p{font-size:clamp(17px,2vw,22px)!important;line-height:1.35!important;max-width:620px!important;color:#fff!important;margin:0!important}
+/* Map campaign */
+.hotspot-map-section-v18{background:var(--coke)!important;padding:0 0 82px!important;color:#fff!important}
+.hotspot-map-title-v18{margin:0!important;padding:66px 20px 34px!important;background:#fff!important;color:var(--coke)!important}
+.hotspot-map-title-v18 h2{font-family:TCCCHeadline!important;color:var(--coke)!important;font-size:clamp(40px,5vw,68px)!important;line-height:.98!important}
+.hotspot-map-title-v18 p{color:var(--coke)!important;font-size:18px!important}
+.hotspot-map-v18{width:min(1240px,calc(100% - 40px))!important;height:570px!important;margin:34px auto 0!important;border:6px solid #fff!important;border-radius:22px!important;box-shadow:0 18px 50px rgba(0,0,0,.18)!important}
+.hotspot-list-v18{width:min(1240px,calc(100% - 40px))!important;margin:18px auto 0!important;gap:10px!important}
+.hotspot-list-v18 a{min-height:54px!important;background:#fff!important;color:var(--coke)!important;border:2px solid #fff!important;border-radius:10px!important;font-weight:700!important}
+.hotspot-list-v18 b{color:var(--coke)!important}.hotspot-list-v18 a:hover{background:#fff!important;color:var(--coke-dark)!important;transform:translateY(-2px)}
+/* Home how-to */
+.how{background:#fff!important;padding-top:88px!important;padding-bottom:88px!important}.how h2{font-family:TCCCCondensed,TCCCHeadline!important;color:var(--coke)!important;font-size:clamp(48px,6vw,78px)!important;text-transform:uppercase;letter-spacing:.01em!important}
+.steps{gap:14px!important}.steps>div{background:#fff!important;border:2px solid #f0dadd!important;border-radius:10px!important;box-shadow:none!important;padding:28px 22px!important}.steps b{background:var(--coke)!important;color:#fff!important;width:44px!important;height:44px!important}.steps h3{color:#151515!important}
+/* Location campaign */
+.kx-location-hero{min-height:570px!important;background:var(--coke)!important}
+.kx-location-hero .kx-hero-image{display:none!important}
+.kx-location-hero:after{background:linear-gradient(90deg,rgba(91,0,6,.40),rgba(228,30,43,.05))!important}
+.kx-location-hero:before{content:"";position:absolute;right:-5%;top:-18%;width:620px;height:620px;border:34px solid rgba(255,255,255,.82);border-radius:50%;opacity:.72;box-shadow:0 0 0 90px rgba(255,255,255,.08),inset 0 0 0 18px rgba(255,255,255,.55);z-index:1}
+.kx-location-hero-inner{padding:88px 0 68px!important;z-index:3!important}
+.kx-location-brand{margin-bottom:22px!important}.kx-location-brand img{width:210px!important;max-height:68px!important}.kx-location-brand-note{font-size:15px!important}
+.kx-location-kicker{background:#fff!important;color:var(--coke)!important;border-radius:3px!important;letter-spacing:1.5px!important;padding:8px 12px!important}
+.kx-location-hero h1{font-family:TCCCHeadline!important;font-size:clamp(52px,7vw,92px)!important;line-height:.94!important;letter-spacing:-.02em!important}
+.kx-location-hero p{font-size:20px!important}.kx-location-meta span{background:rgba(255,255,255,.14)!important;border:1px solid rgba(255,255,255,.5)!important;border-radius:5px!important}
+.kx-location-mapbar{background:#fff!important;padding:76px 6vw!important}.kx-map-layout{align-items:stretch!important}.kx-map-copy .mini{color:var(--coke)!important;font-weight:700!important;letter-spacing:2px!important;text-transform:uppercase}.kx-map-copy h2{font-family:TCCCHeadline!important}.kx-direction{background:var(--coke)!important;border-radius:4px!important}
+/* Location booking */
+.location-booking-v10{background:#fff!important;padding:80px 5vw 100px!important}.lb-kicker{color:var(--coke)!important}.lb-head h2{font-family:TCCCHeadline!important;color:var(--coke)!important}.lb-step,.lb-seats{border:2px solid #f0dadd!important;border-radius:10px!important;box-shadow:none!important}.lb-num{background:var(--coke)!important;border-radius:5px!important}.lb-date{border-color:var(--coke)!important;background:var(--coke)!important;border-radius:6px!important;box-shadow:none!important}.lb-date.selected{background:#fff!important;color:var(--coke)!important}.lb-select{border:2px solid #efc9ce!important;border-radius:8px!important}.lb-select:focus,.lb-select:hover:not(:disabled){border-color:var(--coke)!important}.lb-screen,.lb-submit{background:var(--coke)!important;border-radius:5px!important}.lb-seat.selected{background:var(--coke)!important;border-color:var(--coke)!important}.lb-seat:hover:not(:disabled){border-color:var(--coke)!important}
+/* Success */
+.success{background:var(--coke)!important;min-height:calc(100vh - 78px)!important}.success>div{border-radius:6px!important;box-shadow:none!important;border:3px solid #fff!important}.success h1,.success h2{font-family:TCCCCondensed,TCCCHeadline!important;color:var(--coke)!important}.success .btn{background:var(--coke)!important;border-radius:5px!important}
+footer{background:var(--coke)!important;color:#fff!important}footer p{color:#fff!important;opacity:.85}
+/* Admin */
+.admin-campaign,.admin-campaign *{font-family:TCCCText,Arial,sans-serif!important}.admin-campaign h1,.admin-campaign h2,.admin-campaign h3{font-family:TCCCHeadline,Arial,sans-serif!important}.admin-campaign .btn,.admin-campaign button[type=submit]{background:var(--coke)!important;color:#fff!important;border-radius:5px!important}
+@media(max-width:800px){header{height:70px!important;padding:0 18px!important}.brandLogo{width:160px!important}.hero-v19{min-height:620px!important;padding:70px 24px!important}.hero-v19 h1{font-size:clamp(44px,11vw,64px)!important}.hotspot-map-v18{height:470px!important}.hotspot-list-v18{grid-template-columns:1fr 1fr!important}.kx-location-hero:before{width:430px;height:430px;right:-22%;top:-10%}}
+@media(max-width:520px){.hero-v19{min-height:590px!important}.hero-v19 h1{font-size:44px!important}.hero-v19 h1 .hero-welcome{font-size:.70em!important}.hotspot-map-title-v18{padding:50px 16px 28px!important}.hotspot-map-title-v18 h2{font-size:42px!important}.hotspot-map-v18{width:calc(100% - 24px)!important;height:420px!important;border-width:4px!important}.hotspot-list-v18{width:calc(100% - 24px)!important;grid-template-columns:1fr!important}.kx-location-hero{min-height:520px!important}.kx-location-hero:before{width:320px;height:320px;right:-32%;top:0}.kx-location-hero-inner{padding:70px 0 48px!important}.kx-location-hero h1{font-size:50px!important}.kx-location-mapbar{padding:55px 20px!important}}
+
+/* ================= V34 CAMPAIGN DESIGN — LOAD LAST ================= */
+:root{--coke:#E41E2B!important}
+body{background:#fff!important;color:#151515!important;font-family:TCCCText,TCCC,Arial,sans-serif!important}
+body *{font-family:TCCCText,TCCC,Arial,sans-serif!important}
+h1,h2,h3,h4,.campaign-welcome-v34,.campaign-side-word-v34{font-family:TCCCHeadline,TCCC,Arial,sans-serif!important}
+.campaign-home-hero-v34{min-height:820px!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;position:relative!important;overflow:hidden!important;background:#E41E2B url('/assets/campaign-wave.jpg?v=34') center/cover no-repeat!important;color:#fff!important}
+.campaign-home-hero-v34:after{content:""!important;position:absolute!important;inset:0!important;background:rgba(145,0,8,.14)!important;pointer-events:none!important}
+.campaign-home-hero-v34 .hero-content-v19{z-index:3!important;width:min(1050px,92%)!important;max-width:1050px!important;margin:0 auto!important;padding:70px 20px!important}
+.campaign-welcome-v34{font-family:TCCCCondensed,TCCCHeadline,Arial,sans-serif!important;font-weight:700!important;font-size:32px!important;letter-spacing:1px!important;margin-bottom:24px!important;color:#fff!important}
+.campaign-title-row-v34{display:flex!important;align-items:center!important;justify-content:center!important;gap:48px!important}
+.campaign-badge-v34{width:190px!important;height:190px!important;object-fit:cover!important;background:#fff!important;border:5px solid #fff!important;box-shadow:0 10px 35px rgba(0,0,0,.12)!important}
+.campaign-side-word-v34{font-family:TCCCCondensed,TCCCHeadline,Arial,sans-serif!important;font-size:70px!important;line-height:1!important;font-weight:700!important;color:#fff!important}
+.campaign-accessible-title-v34{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important}
+.campaign-home-hero-v34 p{max-width:620px!important;margin:28px auto 0!important;color:#fff!important;font-size:19px!important;line-height:1.35!important;font-weight:400!important}
+.hotspot-map-section-v18{background:#E41E2B!important}
+.hotspot-map-title-v18{background:#fff!important;color:#E41E2B!important}
+.hotspot-map-title-v18 h2,.hotspot-map-title-v18 p{color:#E41E2B!important}
+.hotspot-map-v18{border-color:#fff!important}
+.hotspot-list-v18 a{background:#fff!important;color:#E41E2B!important;border-color:#fff!important}
+.hotspot-list-v18 a b{color:#E41E2B!important}
+.hotspot-list-v18 a:hover{background:#E41E2B!important;color:#fff!important;border-color:#fff!important}
+.hotspot-list-v18 a:hover b{color:#fff!important}
+@media(max-width:800px){.campaign-home-hero-v34{min-height:650px!important}.campaign-title-row-v34{gap:18px!important}.campaign-badge-v34{width:145px!important;height:150px!important}.campaign-side-word-v34{font-size:52px!important}.campaign-welcome-v34{font-size:25px!important}}
+@media(max-width:520px){.campaign-home-hero-v34{min-height:600px!important}.campaign-home-hero-v34 .hero-content-v19{padding:45px 10px!important}.campaign-title-row-v34{gap:8px!important}.campaign-badge-v34{width:125px!important;height:128px!important;border-width:3px!important}.campaign-side-word-v34{font-size:38px!important}.campaign-welcome-v34{font-size:21px!important;margin-bottom:17px!important}.campaign-home-hero-v34 p{font-size:16px!important;max-width:330px!important;margin-top:22px!important}}

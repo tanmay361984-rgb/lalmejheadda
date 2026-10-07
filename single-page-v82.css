@@ -1,0 +1,3991 @@
+:root{--coke:#E41E2B;--ink:#151515;--white:#fff;--line:#ead8d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:TCCC,Arial,sans-serif}.lal-page{width:100%;overflow:hidden}.design-section{width:100%;background-repeat:no-repeat;background-position:center;background-size:cover}.design-s2{aspect-ratio:2048/1152;background-image:url('/assets/section2.webp')}.design-s3{aspect-ratio:2048/1152;background-image:url('/assets/section3.webp')}.design-s5{aspect-ratio:2048/1152;background-image:url('/assets/section5.webp')}
+.booking-section{background:#fff;padding:7vw 3.6vw}.booking-shell{max-width:1500px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.location-panel{min-height:680px;background:#E41E2B url('/assets/kolkata-map.svg') center/58% auto no-repeat;border:1px solid #171717;position:relative;overflow:hidden}.location-panel:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(228,30,43,.96),rgba(228,30,43,.68));pointer-events:none}.location-panel-inner{position:relative;z-index:2;color:#fff;padding:62px 54px;max-width:570px}.plan-label{font-family:TCCC,Arial,sans-serif;font-size:15px;letter-spacing:1.8px}.location-panel h2{font-family:TCCC,Arial,sans-serif;font-weight:900;font-size:clamp(42px,4.1vw,70px);line-height:.93;margin:100px 0 22px;text-transform:uppercase}.location-panel p{font-size:20px;line-height:1.25;max-width:330px;margin:0 0 18px}.location-address{font-size:15px;line-height:1.4;max-width:420px;margin-bottom:25px}.location-actions{display:flex;gap:12px;flex-wrap:wrap}.direction-btn,.map-link{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:13px 19px;border-radius:999px;font-weight:900;font-size:13px;letter-spacing:.4px}.direction-btn{background:#fff;color:var(--coke)}.map-link{border:1.5px solid #fff;color:#fff;background:transparent}.location-select-label{display:block;font-size:11px;font-weight:900;letter-spacing:1.5px;margin-top:44px;margin-bottom:8px}.location-select{width:100%;max-width:390px;background:#fff;color:var(--coke);border:0;border-radius:6px;padding:13px 14px;font:700 14px TCCC,Arial,sans-serif}
+.booking-card{border:1px solid #222;background:#fff;padding:30px 34px 34px;box-shadow:0 10px 28px rgba(0,0,0,.04)}.booking-map{height:245px;border:1px solid #222}.booking-map iframe{width:100%;height:100%;border:0}.booking-card-head{text-align:center;border-bottom:1px solid #e5b9bd;padding:20px 0 16px}.booking-card-head span{font-size:12px;letter-spacing:2px;color:var(--coke);font-weight:900}.booking-card-head h2{font-size:34px;color:var(--coke);margin:6px 0 2px;font-weight:900}.booking-card-head p{margin:0;font-size:13px}.book-step{border:1px solid #d7aeb2;position:relative;padding:30px 18px 18px;margin-top:17px;background:#fff}.book-step.wide{padding-top:36px}.step-no{position:absolute;top:-17px;left:18px;background:#fff;color:var(--coke);font-family:TCCC,Arial,sans-serif;font-size:34px;font-weight:900;padding:0 7px;line-height:1}.step-content h3{font-family:TCCC,Arial,sans-serif;color:var(--coke);font-size:21px;margin:0 0 14px;font-weight:900}.date-buttons{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.date-btn{border:2px solid #e8aeb3;background:#fff;padding:8px 4px;min-height:78px;color:#151515;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05}.date-btn span{font-size:11px;font-weight:900}.date-btn strong{font-size:29px;line-height:1;margin:4px 0}.date-btn small{font-size:10px;font-weight:800}.date-btn.selected{background:#fff0f1;border-color:var(--coke);box-shadow:inset 0 0 0 2px var(--coke);color:var(--coke)}.book-bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.select-wrap select{width:100%;height:62px;border:1px solid #dfb5b9;border-radius:8px;padding:0 15px;font:700 14px TCCC,Arial,sans-serif;color:#151515;background:#fff}.select-wrap select:focus{outline:2px solid rgba(228,30,43,.15);border-color:var(--coke)}.people-count{height:62px;border:1px solid #dfb5b9;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px}.people-count strong{color:var(--coke);font-size:24px;margin-right:6px}.people-empty{color:#777;font-size:12px}.booking-note{font-size:12px;text-align:center;color:#555;padding:12px 8px;border-bottom:1px solid #ead4d5}.seat-section{border:1px solid #d7aeb2;padding:20px 18px;margin-top:14px}.seat-section-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:15px}.seat-section-head h3{margin:0;color:var(--coke);font-size:18px}.seat-section-head span{font-size:11px;color:#777}.seat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.seat{height:34px;border:1px solid #d8b5b8;background:#fff;color:#151515;font:800 11px TCCC,Arial,sans-serif;cursor:pointer}.seat:hover:not(:disabled){border-color:var(--coke)}.seat.selected{background:var(--coke);border-color:var(--coke);color:#fff}.seat.booked,.seat:disabled{background:#eee;color:#aaa;text-decoration:line-through;cursor:not-allowed}.seat-info{text-align:center;color:#777;font-size:11px;margin-top:10px;min-height:16px}.confirm-btn{display:block;margin:17px auto 0;border:0;background:var(--coke);color:#fff;border-radius:999px;padding:13px 24px;font:900 13px TCCC,Arial,sans-serif;cursor:pointer}.confirm-btn:hover{background:#bd1420}.no-slots{font-size:13px;color:#777;grid-column:1/-1;text-align:center;padding:15px}
+.modal{position:fixed;inset:0;background:rgba(20,0,0,.72);z-index:9999;display:grid;place-items:center;padding:20px}.modalbox{width:min(460px,100%);background:#fff;padding:35px;border-radius:8px;text-align:center;box-shadow:0 25px 70px rgba(0,0,0,.35)}.modalbox h2{color:var(--coke);font-size:34px;margin:0 0 8px}.modalbox p{color:#666}.modalbox input{display:block;width:100%;margin:10px 0;padding:13px;border:1px solid #ddd;border-radius:5px;font:15px TCCC,Arial,sans-serif}.modalbox button{width:100%;padding:14px;background:var(--coke);color:#fff;border:0;border-radius:5px;font:800 14px TCCC,Arial,sans-serif;cursor:pointer}.hidden{display:none!important}
+@media(max-width:900px){.booking-shell{grid-template-columns:1fr;gap:25px}.location-panel{min-height:560px}.location-panel h2{margin-top:80px}.booking-card{padding:22px}.design-section{aspect-ratio:2048/1250}.date-buttons{grid-template-columns:repeat(5,minmax(70px,1fr));overflow-x:auto}.date-btn{min-width:75px}.book-bottom-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.design-section{aspect-ratio:auto;height:92vw;min-height:330px}.design-s2{height:100vw}.design-s3{height:100vw}.design-s5{height:100vw}.booking-section{padding:35px 12px}.location-panel{min-height:530px}.location-panel-inner{padding:35px 25px}.location-panel h2{font-size:38px;margin-top:80px}.location-panel p{font-size:16px}.booking-card{padding:14px}.booking-map{height:190px}.booking-card-head h2{font-size:27px}.book-step{padding:28px 12px 13px}.date-buttons{gap:6px}.date-btn{min-width:62px;min-height:70px}.date-btn strong{font-size:24px}.seat-grid{grid-template-columns:repeat(5,1fr);gap:5px}.seat{height:32px;font-size:10px}.location-actions{flex-direction:column;align-items:stretch}.direction-btn,.map-link{text-align:center}.location-select{max-width:none}}
+
+/* V39 — Section 4 follows the supplied design: Kolkata hotspot left + compact booking panel right */
+.design-s4{background:#fff;min-height:720px;display:flex;align-items:center}
+.section4-shell{width:min(1185px,100%);margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center;padding:28px 0}
+.section4-hotspot{width:100%;height:330px;background:#ed1c24;border:1px solid #1d1d1d;position:relative;overflow:hidden;color:#fff}
+.section4-hotspot:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(237,28,36,.98) 0%,rgba(237,28,36,.84) 42%,rgba(237,28,36,.08) 100%);z-index:1;pointer-events:none}
+.hotspot-copy{position:absolute;z-index:4;left:32px;top:24px;width:205px}
+.hotspot-copy .plan-label{font-size:12px;letter-spacing:1.1px}
+.hotspot-copy h2{font-size:18px;line-height:1.03;margin:102px 0 11px;font-weight:900;letter-spacing:.2px}
+.hotspot-copy p{font-size:11px;line-height:1.25;margin:0;width:175px}
+.kolkata-map-art{position:absolute;right:112px;top:-2px;width:255px;height:345px;z-index:2}
+.kolkata-map-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;mix-blend-mode:normal}
+.hotspot-pins{position:absolute;inset:0;z-index:5}
+.hotspot-pin{position:absolute;transform:translate(-50%,-50%);width:27px;height:27px;border:0;background:transparent;padding:0;cursor:pointer}
+.hotspot-pin:after{content:"";position:absolute;inset:4px;border:2px solid rgba(255,255,255,.02);border-radius:50%}
+.hotspot-pin span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:0;width:27px;height:27px;border-radius:50%;background:transparent}
+.hotspot-pin.active:after{border-color:rgba(255,255,255,.8);box-shadow:0 0 0 3px rgba(255,255,255,.12)}
+.hotspot-footer{position:absolute;left:32px;right:30px;bottom:34px;z-index:6;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.see-map-btn{display:flex;align-items:center;gap:8px;border:0;background:none;color:#fff;padding:0;font:700 11px TCCC,Arial,sans-serif;cursor:pointer}
+.see-map-thumb{width:48px;height:48px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.85);display:block;background:#fff}
+.see-map-thumb iframe{width:100%;height:100%;border:0;pointer-events:none}
+.hotspot-book-btn{display:inline-flex;align-items:center;gap:18px;color:#fff;border:1px solid #fff;border-radius:999px;padding:9px 13px 9px 15px;text-decoration:none;font-size:11px;font-weight:900;text-transform:none}
+.hotspot-book-btn span{font-size:16px;line-height:1}
+.hotspot-location-name{position:absolute;left:32px;bottom:9px;z-index:6;font-size:0;color:transparent}
+
+.section4-booking-card{width:100%;min-height:667px;border:1px solid #222;background:#fff;padding:16px 32px 20px;box-shadow:none}
+.section4-location-head{min-height:218px;border-bottom:1px solid #e4bfc2;position:relative;padding:7px 0 10px;display:grid;grid-template-columns:1fr 275px;grid-template-rows:82px 1fr;column-gap:20px}
+.section4-address{font-size:11px;line-height:1.35;max-width:290px;display:flex;gap:8px;align-items:flex-start;padding-top:5px;font-weight:700}
+.pin-icon{color:var(--coke);font-size:18px;line-height:1;margin-top:-2px}
+.section4-direction{justify-self:start;align-self:end;background:var(--coke);color:#fff;border-radius:999px;text-decoration:none;padding:9px 14px;font-size:10px;font-weight:900;margin-bottom:5px}
+.section4-map{grid-column:2;grid-row:1 / span 2;width:100%;height:205px;border:0;overflow:hidden}
+.section4-map iframe{width:100%;height:100%;border:0}
+.section4-location-head>.section4-direction{grid-column:1;grid-row:2}
+.section4-booking-card .booking-card-head{padding:17px 0 12px}
+.section4-booking-card .booking-card-head span{font-size:9px;letter-spacing:2px}
+.section4-booking-card .booking-card-head h2{font-size:25px;margin:4px 0 3px}
+.section4-booking-card .booking-card-head p{font-size:10px}
+.section4-booking-card .book-step{margin-top:10px;padding:22px 10px 10px;border-color:#ddb4b8}
+.section4-booking-card .book-step.wide{padding-top:26px}
+.section4-booking-card .step-no{font-size:28px;top:-14px;left:18px}
+.section4-booking-card .step-content h3{font-size:17px;margin-bottom:10px}
+.section4-booking-card .date-buttons{grid-template-columns:repeat(5,minmax(50px,1fr));gap:7px}
+.section4-booking-card .date-btn{min-height:70px;padding:6px 2px;border:2px solid #e0a2a7;box-shadow:none}
+.section4-booking-card .date-btn span{font-size:9px}.section4-booking-card .date-btn strong{font-size:26px}.section4-booking-card .date-btn small{font-size:8px}
+.section4-booking-card .book-bottom-grid{gap:10px}
+.section4-booking-card .book-bottom-grid .book-step{min-height:104px}
+.slot-pills{display:flex;flex-wrap:wrap;gap:5px;align-items:center;min-height:55px}
+.slot-btn{border:1px solid #e1aab0;background:#fff;border-radius:999px;padding:5px 7px;font:800 8px TCCC,Arial,sans-serif;cursor:pointer;color:#151515}
+.slot-btn.selected{background:#fff0f1;border-color:var(--coke);color:var(--coke);box-shadow:inset 0 0 0 1px var(--coke)}
+.slot-empty{font-size:9px;color:#777}
+.section4-booking-card #slotSelect{display:none}
+.people-buttons{height:auto;min-height:55px;border:0;display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap}
+.people-btn{width:23px;height:23px;border:1px solid #dfb0b4;background:#fff;color:#151515;border-radius:2px;font:800 9px TCCC,Arial,sans-serif;cursor:pointer;padding:0}
+.people-btn.selected{background:var(--coke);border-color:var(--coke);color:#fff}
+.people-btn:disabled{opacity:.3;cursor:not-allowed}
+.section4-booking-card .booking-note{font-size:9px;padding:7px 4px}
+.section4-booking-card .confirm-btn{font-size:10px;padding:10px 17px;margin:10px auto 0}
+.section4-booking-card .confirm-btn span{font-size:14px;margin-left:3px}
+.seat-section-hidden{display:none!important}
+.section4-booking-card .no-slots{font-size:10px;padding:10px 3px}
+
+@media(max-width:1000px){
+  .section4-shell{width:min(94%,720px);grid-template-columns:1fr;gap:20px}
+  .section4-hotspot{height:360px}
+  .section4-booking-card{min-height:0}
+}
+@media(max-width:560px){
+  .design-s4{min-height:0}
+  .section4-shell{width:100%;padding:20px 12px;gap:16px}
+  .section4-hotspot{height:300px}
+  .hotspot-copy{left:18px;top:18px;width:145px}.hotspot-copy h2{font-size:15px;margin-top:92px}.hotspot-copy p{font-size:9px;width:125px}
+  .kolkata-map-art{right:45px;width:215px;height:300px}
+  .hotspot-footer{left:18px;right:18px;bottom:27px}.hotspot-book-btn{font-size:9px;padding:8px 10px;gap:10px}.see-map-thumb{width:40px;height:40px}
+  .section4-booking-card{padding:12px 14px 15px}.section4-location-head{grid-template-columns:1fr 145px;grid-template-rows:90px 1fr;min-height:180px}.section4-map{height:165px}.section4-address{font-size:9px}.section4-direction{font-size:9px;padding:8px 10px}
+  .section4-booking-card .date-buttons{overflow-x:auto;grid-template-columns:repeat(5,minmax(54px,1fr))}.section4-booking-card .date-btn{min-width:54px}
+  .section4-booking-card .book-bottom-grid{grid-template-columns:1fr 1fr}.section4-booking-card .book-bottom-grid .book-step{min-height:130px}
+  .slot-pills{gap:4px}.slot-btn{font-size:7px;padding:4px 6px}.people-buttons{gap:5px}.people-btn{width:22px;height:22px}
+}
+
+/* V40 — Section 4 exact layout refinement based on supplied Section 4 artwork */
+@media(min-width:1001px){
+  /* V41 — Section 4 follows the supplied artwork: 581x328 left panel
+     vertically centered beside a 575x667 right booking panel. */
+  .design-s4{
+    min-height:667px;
+    height:667px;
+    padding:0;
+    display:block;
+    background:#fff;
+    scroll-margin-top:82px;
+  }
+  .section4-shell{
+    width:1185px;
+    max-width:calc(100% - 30px);
+    height:667px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:581px 575px;
+    gap:29px;
+    align-items:start;
+    padding:0;
+  }
+  .section4-hotspot{
+    width:581px;
+    height:328px;
+    margin:169px 0 0;
+    border:1px solid #1b1b1b;
+    background:#ed1c24;
+  }
+  .section4-hotspot:after{display:none}
+  .hotspot-copy{
+    left:32px;
+    top:24px;
+    width:180px;
+    z-index:7;
+  }
+  .hotspot-copy .plan-label{
+    font-size:11px;
+    letter-spacing:.7px;
+    font-weight:400;
+  }
+  .hotspot-copy h2{
+    font-size:16px;
+    line-height:1.04;
+    margin:98px 0 12px;
+    letter-spacing:.15px;
+  }
+  .hotspot-copy p{
+    font-size:11px;
+    line-height:1.18;
+    width:160px;
+  }
+  .kolkata-map-art{
+    right:140px;
+    top:-6px;
+    width:250px;
+    height:340px;
+    z-index:3;
+  }
+  .kolkata-map-art img{
+    display:block;
+    width:250px;
+    height:340px;
+    max-width:none;
+    object-fit:fill;
+  }
+  /* The supplied map artwork already contains its hotspot graphics. Keep
+     interactive location targets invisible so they do not alter the artwork. */
+  .hotspot-pins{z-index:8}
+  .hotspot-pin{
+    width:30px;
+    height:30px;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  .hotspot-pin:after,.hotspot-pin span{display:none!important}
+  .hotspot-pin.active{outline:0!important}
+  .hotspot-footer{
+    left:32px;
+    right:30px;
+    bottom:34px;
+    z-index:9;
+  }
+  .see-map-btn{
+    font-size:10px;
+    gap:8px;
+  }
+  .see-map-thumb{
+    width:49px;
+    height:49px;
+  }
+  .hotspot-book-btn{
+    font-size:10px;
+    padding:9px 13px 9px 15px;
+    gap:17px;
+    min-width:124px;
+    justify-content:space-between;
+  }
+
+  .section4-booking-card{
+    width:575px;
+    height:667px;
+    min-height:667px;
+    border:1px solid #202020;
+    padding:16px 31px 18px;
+    box-shadow:none;
+  }
+  .section4-location-head{
+    height:219px;
+    min-height:219px;
+    padding:2px 0 10px;
+    grid-template-columns:217px 275px;
+    grid-template-rows:92px 1fr;
+    column-gap:20px;
+    border-bottom:1px solid #e2bfc2;
+  }
+  .section4-address{
+    font-size:10px;
+    line-height:1.27;
+    max-width:217px;
+    padding-top:7px;
+    gap:7px;
+  }
+  .pin-icon{
+    position:relative;
+    display:inline-block;
+    width:15px;
+    height:19px;
+    flex:0 0 15px;
+    margin-top:1px;
+    font-size:0;
+  }
+  .pin-icon:before{
+    content:"";
+    position:absolute;
+    left:2px;
+    top:0;
+    width:10px;
+    height:10px;
+    background:#e41e2b;
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+  }
+  .pin-icon:after{
+    content:"";
+    position:absolute;
+    left:5px;
+    top:3px;
+    width:4px;
+    height:4px;
+    background:#fff;
+    border-radius:50%;
+    z-index:1;
+  }
+  .section4-direction{
+    grid-column:1;
+    grid-row:2;
+    align-self:start;
+    margin-top:2px;
+    margin-bottom:0;
+    padding:8px 13px;
+    font-size:10px;
+  }
+  .section4-map{
+    grid-column:2;
+    grid-row:1 / span 2;
+    width:275px;
+    height:205px;
+  }
+
+  .section4-booking-card .booking-card-head{
+    height:70px;
+    padding:15px 0 10px;
+  }
+  .section4-booking-card .booking-card-head span{
+    font-size:9px;
+    letter-spacing:2.2px;
+  }
+  .section4-booking-card .booking-card-head h2{
+    font-size:25px;
+    line-height:1;
+    margin:4px 0 4px;
+  }
+  .section4-booking-card .booking-card-head p{
+    font-size:10px;
+    line-height:1.1;
+  }
+
+  .section4-booking-card form{position:relative}
+  .section4-booking-card .book-step.wide{
+    height:144px;
+    min-height:144px;
+    margin-top:0;
+    padding:27px 11px 10px;
+  }
+  .section4-booking-card .step-no{
+    top:-17px;
+    left:18px;
+    font-size:31px;
+    line-height:1;
+    padding:0 7px;
+  }
+  .section4-booking-card .step-content h3{
+    font-size:18px;
+    margin:0 0 11px;
+    line-height:1;
+  }
+  .section4-booking-card .date-buttons{
+    display:flex;
+    gap:10px;
+    overflow:hidden;
+    justify-content:center;
+  }
+  .section4-booking-card .date-btn{
+    flex:0 0 70px;
+    width:70px;
+    min-width:70px;
+    height:74px;
+    min-height:74px;
+    padding:5px 2px;
+    border:2px solid #e41e2b;
+    outline:1px solid #e41e2b;
+    outline-offset:-5px;
+    color:#151515;
+    background:#fff;
+  }
+  .section4-booking-card .date-btn span{font-size:8px;line-height:1}
+  .section4-booking-card .date-btn strong{font-size:27px;line-height:1;margin:4px 0 3px}
+  .section4-booking-card .date-btn small{font-size:8px;line-height:1}
+  .section4-booking-card .date-btn.selected{
+    color:#151515;
+    background:#fff;
+    border-color:#e41e2b;
+    box-shadow:none;
+  }
+
+  .section4-booking-card .book-bottom-grid{
+    height:108px;
+    grid-template-columns:1fr 1fr;
+    gap:11px;
+  }
+  .section4-booking-card .book-bottom-grid .book-step{
+    height:108px;
+    min-height:108px;
+    margin-top:25px;
+    padding:24px 10px 8px;
+  }
+  .section4-booking-card .book-bottom-grid .step-no{
+    top:-15px;
+    font-size:31px;
+  }
+  .section4-booking-card .book-bottom-grid .step-content h3{
+    font-size:16px;
+    margin-bottom:8px;
+    white-space:nowrap;
+  }
+  .slot-pills{
+    min-height:50px;
+    gap:4px;
+    align-content:center;
+    justify-content:center;
+  }
+  .slot-btn{
+    padding:3px 7px;
+    font-size:7px;
+    line-height:1.1;
+  }
+  .slot-empty{font-size:8px}
+  .people-buttons{
+    min-height:50px;
+    gap:8px;
+    align-content:center;
+  }
+  .people-btn{
+    width:20px;
+    height:20px;
+    font-size:8px;
+  }
+  .section4-booking-card .booking-note{
+    height:41px;
+    padding:11px 3px 7px;
+    font-size:8px;
+    line-height:1;
+    border-bottom:1px solid #e4c9ca;
+  }
+  .section4-booking-card .confirm-btn{
+    height:29px;
+    padding:6px 17px;
+    margin:0 auto;
+    font-size:9px;
+    line-height:1;
+  }
+  .section4-booking-card .confirm-btn span{
+    font-size:13px;
+    margin-left:4px;
+  }
+}
+
+@media(max-width:1000px){
+  .design-s4{height:auto;min-height:0;padding:35px 0;scroll-margin-top:70px}
+  .section4-shell{height:auto}
+  .section4-hotspot{height:328px;margin:0}
+  .section4-booking-card{height:auto}
+}
+
+/* V42 — Section 4 final reference-aligned polish */
+@media(min-width:1001px){
+  .design-s4{
+    height:667px!important;
+    min-height:667px!important;
+    padding:0!important;
+    background:#fff!important;
+  }
+  .section4-shell{
+    width:1185px!important;
+    max-width:calc(100% - 30px)!important;
+    height:667px!important;
+    grid-template-columns:581px 575px!important;
+    gap:29px!important;
+    margin:0 auto!important;
+    align-items:start!important;
+  }
+
+  /* LEFT: exact 581 x 328 reference composition */
+  .section4-hotspot{
+    position:relative!important;
+    width:581px!important;
+    height:328px!important;
+    margin-top:169px!important;
+    overflow:hidden!important;
+    border:1px solid #202020!important;
+    background:#ed1c24!important;
+  }
+  .section4-hotspot:after{display:none!important}
+  .kolkata-map-art{
+    position:absolute!important;
+    left:191px!important;
+    right:auto!important;
+    top:-1px!important;
+    width:250px!important;
+    height:340px!important;
+    overflow:hidden!important;
+    z-index:2!important;
+    pointer-events:none!important;
+  }
+  .kolkata-map-art img{
+    width:250px!important;
+    height:340px!important;
+    object-fit:fill!important;
+    display:block!important;
+  }
+  .hotspot-copy{
+    position:absolute!important;
+    left:32px!important;
+    top:24px!important;
+    width:180px!important;
+    z-index:6!important;
+  }
+  .hotspot-copy .plan-label{font-size:11px!important;letter-spacing:.7px!important}
+  .hotspot-copy h2{
+    font-size:16px!important;
+    line-height:1.04!important;
+    margin:98px 0 12px!important;
+  }
+  .hotspot-copy p{
+    font-size:11px!important;
+    line-height:1.18!important;
+    width:160px!important;
+    margin:0!important;
+  }
+  .hotspot-pins,.hotspot-location-name{display:none!important}
+  .hotspot-footer{
+    position:absolute!important;
+    left:32px!important;
+    right:30px!important;
+    bottom:34px!important;
+    z-index:7!important;
+  }
+  .see-map-btn{font-size:10px!important;gap:8px!important}
+  .see-map-thumb{
+    width:49px!important;height:49px!important;
+    border-radius:50%!important;
+  }
+  .hotspot-book-btn{
+    min-width:124px!important;
+    padding:9px 13px 9px 15px!important;
+    font-size:10px!important;
+    gap:17px!important;
+  }
+
+  /* RIGHT: exact 575 x 667 reference card */
+  .section4-booking-card{
+    width:575px!important;
+    height:667px!important;
+    min-height:667px!important;
+    box-sizing:border-box!important;
+    border:1px solid #202020!important;
+    padding:16px 31px 18px!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+  }
+  .section4-location-head{
+    height:219px!important;
+    min-height:219px!important;
+    padding:2px 0 10px!important;
+    grid-template-columns:217px 275px!important;
+    grid-template-rows:92px 1fr!important;
+    column-gap:20px!important;
+    border-bottom:1px solid #e2bfc2!important;
+  }
+  .section4-address{
+    max-width:217px!important;
+    padding-top:7px!important;
+    font-size:10px!important;
+    line-height:1.27!important;
+    gap:7px!important;
+  }
+  .section4-direction{
+    grid-column:1!important;
+    grid-row:2!important;
+    align-self:start!important;
+    margin:2px 0 0!important;
+    padding:8px 13px!important;
+    font-size:10px!important;
+  }
+  .section4-map{
+    grid-column:2!important;
+    grid-row:1 / span 2!important;
+    width:275px!important;
+    height:205px!important;
+  }
+  .section4-booking-card .booking-card-head{
+    height:70px!important;
+    box-sizing:border-box!important;
+    padding:15px 0 10px!important;
+  }
+  .section4-booking-card .booking-card-head span{font-size:9px!important;letter-spacing:2.2px!important}
+  .section4-booking-card .booking-card-head h2{font-size:25px!important;line-height:1!important;margin:4px 0!important}
+  .section4-booking-card .booking-card-head p{font-size:10px!important;line-height:1.1!important}
+
+  .section4-booking-card .book-step.wide{
+    height:144px!important;min-height:144px!important;
+    margin-top:0!important;padding:27px 11px 10px!important;
+    box-sizing:border-box!important;
+  }
+  .section4-booking-card .step-no{
+    top:-17px!important;left:18px!important;
+    font-size:31px!important;line-height:1!important;padding:0 7px!important;
+  }
+  .section4-booking-card .step-content h3{
+    font-size:18px!important;line-height:1!important;margin:0 0 11px!important;
+  }
+  .section4-booking-card .date-buttons{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:10px!important;
+    justify-content:center!important;
+    overflow:hidden!important;
+    width:100%!important;
+  }
+  .section4-booking-card .date-btn{
+    flex:0 0 70px!important;width:70px!important;min-width:70px!important;
+    height:74px!important;min-height:74px!important;
+    padding:5px 2px!important;
+    border:2px solid #e41e2b!important;
+    outline:1px solid #e41e2b!important;
+    outline-offset:-5px!important;
+    color:#151515!important;background:#fff!important;
+    box-shadow:none!important;
+  }
+  .section4-booking-card .date-btn span{font-size:8px!important;line-height:1!important}
+  .section4-booking-card .date-btn strong{font-size:27px!important;line-height:1!important;margin:4px 0 3px!important}
+  .section4-booking-card .date-btn small{font-size:8px!important;line-height:1!important}
+
+  .section4-booking-card .book-bottom-grid{
+    height:108px!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:11px!important;
+  }
+  .section4-booking-card .book-bottom-grid .book-step{
+    height:108px!important;min-height:108px!important;
+    margin-top:25px!important;padding:24px 10px 8px!important;
+    box-sizing:border-box!important;
+  }
+  .section4-booking-card .book-bottom-grid .step-no{top:-15px!important;font-size:31px!important}
+  .section4-booking-card .book-bottom-grid .step-content h3{
+    font-size:16px!important;margin-bottom:8px!important;white-space:nowrap!important;
+  }
+  .slot-pills{
+    min-height:50px!important;gap:4px!important;
+    align-content:center!important;justify-content:center!important;
+  }
+  .slot-btn{padding:3px 7px!important;font-size:7px!important;line-height:1.1!important}
+  .slot-empty{font-size:8px!important}
+  .people-buttons{
+    min-height:50px!important;gap:8px!important;
+    align-content:center!important;justify-content:center!important;
+  }
+  .people-btn{width:20px!important;height:20px!important;font-size:8px!important}
+
+  /* The reference has no visible seat-selection panel. */
+  .seat-section,.seat-section-hidden{display:none!important}
+
+  .section4-booking-card .booking-note{
+    height:41px!important;box-sizing:border-box!important;
+    padding:11px 3px 7px!important;
+    font-size:8px!important;line-height:1!important;
+    border-bottom:1px solid #e4c9ca!important;
+  }
+  .section4-booking-card .confirm-btn{
+    height:29px!important;
+    padding:6px 17px!important;
+    margin:0 auto!important;
+    font-size:9px!important;line-height:1!important;
+  }
+  .section4-booking-card .confirm-btn span{font-size:13px!important;margin-left:4px!important}
+}
+
+/* Keep the same visual relationship on tablet/mobile without breaking booking. */
+@media(max-width:1000px){
+  .section4-hotspot{overflow:hidden}
+  .hotspot-pins,.hotspot-location-name{display:none!important}
+  .seat-section,.seat-section-hidden{display:none!important}
+}
+
+/* V43 — prominent Section 4 + full V32-level seat selection without changing the reference composition */
+.design-s4{background:linear-gradient(180deg,#fff 0%,#fff 72%,#fff8f8 100%)!important}
+.section4-shell{filter:drop-shadow(0 18px 34px rgba(0,0,0,.08))}
+.section4-hotspot{box-shadow:0 18px 38px rgba(228,30,43,.16)!important}
+.section4-booking-card{box-shadow:0 18px 42px rgba(0,0,0,.09)!important}
+.section4-booking-card:before{content:"";display:block;position:absolute;height:4px;left:-1px;right:-1px;top:-1px;background:#e41e2b;z-index:2}
+.section4-booking-card{position:relative}
+.section4-booking-card .date-btn:hover{transform:translateY(-2px);box-shadow:0 6px 15px rgba(228,30,43,.14)}
+.section4-booking-card .slot-btn:hover,.section4-booking-card .people-btn:hover:not(:disabled){border-color:#e41e2b;transform:translateY(-1px)}
+.section4-booking-card .confirm-btn{box-shadow:0 8px 18px rgba(228,30,43,.22)!important}
+
+.seat-picker-modal{position:fixed;inset:0;background:rgba(18,18,18,.72);backdrop-filter:blur(5px);z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
+.seat-picker-modal.open{display:flex}
+.seat-picker-dialog{width:min(560px,100%);max-height:min(760px,calc(100vh - 30px));overflow:auto;background:#fff;border:1px solid #222;box-shadow:0 30px 80px rgba(0,0,0,.35);padding:30px 32px 26px;position:relative}
+.seat-picker-close{position:absolute;right:14px;top:10px;border:0;background:transparent;font-size:30px;line-height:1;color:#e41e2b;cursor:pointer}
+.seat-picker-kicker{font-size:10px;letter-spacing:2px;color:#e41e2b;font-weight:900}
+.seat-picker-dialog h2{margin:5px 0 5px;color:#e41e2b;font-size:30px;line-height:1;font-weight:900}
+.seat-picker-dialog p{margin:0 0 16px;font-size:13px;color:#555}
+.seat-picker-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:#555;margin-bottom:15px}
+.seat-picker-legend i{display:inline-block;width:11px;height:11px;border:1px solid #d8b5b8;vertical-align:-1px;margin-right:4px;background:#fff}.seat-picker-legend i.selected{background:#e41e2b;border-color:#e41e2b}.seat-picker-legend i.booked{background:#ddd;border-color:#ddd}
+.seat-picker-screen{height:28px;background:#e41e2b;color:#fff;display:grid;place-items:center;font-size:10px;letter-spacing:2px;font-weight:900;margin:0 auto 20px;width:70%;border-radius:5px 5px 14px 14px}
+.seat-picker-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;max-width:390px;margin:0 auto}
+.seat-picker-grid .seat{height:48px;border:1px solid #d8b5b8;background:#fff;color:#151515;font:900 12px TCCC,Arial,sans-serif;cursor:pointer}
+.seat-picker-grid .seat:hover:not(:disabled){border-color:#e41e2b;transform:translateY(-2px)}
+.seat-picker-grid .seat.selected{background:#e41e2b;border-color:#e41e2b;color:#fff}.seat-picker-grid .seat.booked,.seat-picker-grid .seat:disabled{background:#eee;color:#aaa;text-decoration:line-through;cursor:not-allowed}
+.seat-picker-info{text-align:center;min-height:20px;font-size:12px;color:#666;margin:15px 0}
+.seat-picker-confirm{display:block;margin:0 auto;border:0;border-radius:999px;background:#e41e2b;color:#fff;padding:12px 24px;font:900 12px TCCC,Arial,sans-serif;cursor:pointer;box-shadow:0 8px 20px rgba(228,30,43,.2)}
+.seat-picker-confirm:hover{background:#c91522}
+body.seat-picker-open{overflow:hidden}
+@media(max-width:560px){.seat-picker-dialog{padding:25px 18px 22px}.seat-picker-dialog h2{font-size:25px}.seat-picker-grid{gap:7px}.seat-picker-grid .seat{height:43px}.seat-picker-screen{width:85%}}
+
+
+/* V44 — Design 4 visual layout with Version 31 booking behavior.
+   The booking flow remains: Date → 1-hour Slot → Seats → Confirm.
+   Only the presentation of Section 4 has changed. */
+.section4-booking-card .seat-step-design4 .step-content h3{
+  display:flex!important;align-items:baseline!important;gap:6px!important;
+}
+.section4-booking-card .seat-step-design4 .step-content h3 small{
+  font-size:8px!important;font-weight:700!important;color:#777!important;
+}
+.section4-booking-card .seat-step-design4{
+  overflow:hidden!important;
+}
+.section4-booking-card .mini-seat-grid{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(18px,1fr))!important;
+  gap:5px!important;
+  width:100%!important;
+  max-height:46px!important;
+  overflow-y:auto!important;
+  padding:1px!important;
+  box-sizing:border-box!important;
+}
+.section4-booking-card .mini-seat{
+  height:22px!important;
+  min-width:0!important;
+  padding:0!important;
+  border:1px solid #dfb8bb!important;
+  background:#fff!important;
+  color:#222!important;
+  font:900 8px/1 TCCC,Arial,sans-serif!important;
+  cursor:pointer!important;
+}
+.section4-booking-card .mini-seat:hover:not(:disabled){
+  border-color:#e41e2b!important;
+  transform:translateY(-1px)!important;
+}
+.section4-booking-card .mini-seat.selected{
+  background:#e41e2b!important;
+  border-color:#e41e2b!important;
+  color:#fff!important;
+}
+.section4-booking-card .mini-seat.booked,
+.section4-booking-card .mini-seat:disabled{
+  background:#eee!important;
+  border-color:#ddd!important;
+  color:#aaa!important;
+  text-decoration:line-through!important;
+  cursor:not-allowed!important;
+}
+.section4-booking-card .seat-step-design4 .seat-info{
+  font-size:7px!important;
+  line-height:1.1!important;
+  text-align:center!important;
+  color:#777!important;
+  margin:3px 0 0!important;
+  min-height:9px!important;
+}
+.section4-booking-card .seat-step-design4 .step-content{
+  min-width:0!important;
+}
+@media(max-width:1000px){
+  .section4-booking-card .mini-seat-grid{
+    max-height:72px!important;
+  }
+}
+
+
+/* V45 — Section 4: equal-height interactive location hotspot + V31 booking.
+   Visual-only override. No PHP/JS booking behavior is changed. */
+@media(min-width:1001px){
+  .design-s4{
+    height:667px!important;
+    min-height:667px!important;
+    padding:0!important;
+    background:#fff!important;
+  }
+  .section4-shell{
+    width:1185px!important;
+    max-width:calc(100% - 30px)!important;
+    height:667px!important;
+    margin:0 auto!important;
+    display:grid!important;
+    grid-template-columns:581px 575px!important;
+    gap:29px!important;
+    align-items:stretch!important;
+    padding:0!important;
+  }
+
+  /* LEFT — interactive location hotspot panel, equal in height to booking */
+  .section4-hotspot{
+    width:581px!important;
+    height:667px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:hidden!important;
+    border:1px solid #202020!important;
+    background:#ed1c24!important;
+    box-shadow:0 18px 38px rgba(228,30,43,.14)!important;
+  }
+  .section4-hotspot:after{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    inset:0!important;
+    z-index:3!important;
+    pointer-events:none!important;
+    background:linear-gradient(90deg,
+      rgba(237,28,36,.98) 0%,
+      rgba(237,28,36,.90) 27%,
+      rgba(237,28,36,.24) 53%,
+      rgba(237,28,36,0) 72%)!important;
+  }
+
+  .kolkata-map-art{
+    position:absolute!important;
+    left:92px!important;
+    right:auto!important;
+    top:0!important;
+    width:490px!important;
+    height:665px!important;
+    z-index:2!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+  .kolkata-map-art img{
+    display:block!important;
+    width:490px!important;
+    height:665px!important;
+    object-fit:fill!important;
+    object-position:center!important;
+  }
+
+  /* Keep all 13 location hotspots clickable and visible. */
+  .hotspot-pins{
+    position:absolute!important;
+    inset:0!important;
+    z-index:7!important;
+    display:block!important;
+    pointer-events:auto!important;
+  }
+  .hotspot-pin{
+    width:34px!important;
+    height:34px!important;
+    border:0!important;
+    background:transparent!important;
+    padding:0!important;
+    cursor:pointer!important;
+    transform:translate(-50%,-50%)!important;
+  }
+  .hotspot-pin span{
+    display:grid!important;
+    place-items:center!important;
+    width:30px!important;
+    height:30px!important;
+    left:50%!important;
+    top:50%!important;
+    transform:translate(-50%,-50%)!important;
+    border:2px solid #fff!important;
+    border-radius:50%!important;
+    background:#e41e2b!important;
+    color:#fff!important;
+    font:900 9px/1 TCCC,Arial,sans-serif!important;
+    text-shadow:none!important;
+    box-shadow:0 3px 10px rgba(0,0,0,.22)!important;
+    opacity:.96!important;
+  }
+  .hotspot-pin:after{
+    content:""!important;
+    position:absolute!important;
+    inset:2px!important;
+    border:1px solid rgba(255,255,255,.72)!important;
+    border-radius:50%!important;
+    box-shadow:0 0 0 0 rgba(255,255,255,.35)!important;
+  }
+  .hotspot-pin:hover span,
+  .hotspot-pin.active span{
+    background:#fff!important;
+    color:#e41e2b!important;
+    transform:translate(-50%,-50%) scale(1.12)!important;
+    box-shadow:0 0 0 5px rgba(255,255,255,.18),0 5px 15px rgba(0,0,0,.25)!important;
+  }
+  .hotspot-pin:hover:after,
+  .hotspot-pin.active:after{
+    border-color:#fff!important;
+    box-shadow:0 0 0 6px rgba(255,255,255,.12)!important;
+  }
+
+  .hotspot-copy{
+    left:32px!important;
+    top:43px!important;
+    width:205px!important;
+    z-index:8!important;
+  }
+  .hotspot-copy .plan-label{
+    font-size:12px!important;
+    letter-spacing:1px!important;
+  }
+  .hotspot-copy h2{
+    font-size:22px!important;
+    line-height:1.03!important;
+    margin:178px 0 13px!important;
+    font-weight:900!important;
+    letter-spacing:.2px!important;
+  }
+  .hotspot-copy p{
+    font-size:12px!important;
+    line-height:1.25!important;
+    width:175px!important;
+    margin:0!important;
+  }
+
+  .hotspot-footer{
+    left:32px!important;
+    right:30px!important;
+    bottom:34px!important;
+    z-index:9!important;
+  }
+  .see-map-btn{
+    font-size:11px!important;
+    gap:9px!important;
+  }
+  .see-map-thumb{
+    width:54px!important;
+    height:54px!important;
+    border:2px solid rgba(255,255,255,.92)!important;
+  }
+  .hotspot-book-btn{
+    min-width:138px!important;
+    justify-content:center!important;
+    padding:11px 15px!important;
+    font-size:11px!important;
+    gap:18px!important;
+    background:rgba(237,28,36,.18)!important;
+    backdrop-filter:blur(2px)!important;
+  }
+
+  /* RIGHT — booking card remains functionally untouched */
+  .section4-booking-card{
+    width:575px!important;
+    height:667px!important;
+    min-height:667px!important;
+    box-sizing:border-box!important;
+    box-shadow:0 18px 42px rgba(0,0,0,.09)!important;
+  }
+}
+
+/* Tablet/mobile: stack the two equal-priority sections without touching booking logic. */
+@media(max-width:1000px){
+  .section4-shell{
+    width:min(94%,720px)!important;
+    grid-template-columns:1fr!important;
+    height:auto!important;
+    align-items:stretch!important;
+  }
+  .section4-hotspot{
+    width:100%!important;
+    height:520px!important;
+    margin:0!important;
+  }
+  .kolkata-map-art{
+    left:auto!important;
+    right:0!important;
+    top:0!important;
+    width:min(62%,420px)!important;
+    height:100%!important;
+  }
+  .kolkata-map-art img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:fill!important;
+  }
+  .hotspot-pins{
+    display:block!important;
+  }
+  .hotspot-pin span{
+    display:grid!important;
+    font-size:8px!important;
+  }
+  .hotspot-copy{
+    left:24px!important;
+    top:28px!important;
+    width:180px!important;
+  }
+  .hotspot-copy h2{
+    margin-top:115px!important;
+    font-size:19px!important;
+  }
+  .section4-booking-card{
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+  }
+}
+@media(max-width:560px){
+  .section4-hotspot{
+    height:390px!important;
+  }
+  .kolkata-map-art{
+    width:68%!important;
+    height:100%!important;
+    right:-5px!important;
+  }
+  .hotspot-copy{
+    left:18px!important;
+    top:20px!important;
+    width:145px!important;
+  }
+  .hotspot-copy .plan-label{font-size:9px!important}
+  .hotspot-copy h2{
+    font-size:15px!important;
+    margin-top:92px!important;
+  }
+  .hotspot-copy p{font-size:9px!important;width:125px!important}
+  .hotspot-footer{
+    left:18px!important;
+    right:18px!important;
+    bottom:24px!important;
+  }
+  .see-map-thumb{width:40px!important;height:40px!important}
+  .hotspot-book-btn{font-size:9px!important;padding:8px 10px!important;gap:10px!important}
+  .hotspot-pin{width:28px!important;height:28px!important}
+  .hotspot-pin span{width:24px!important;height:24px!important;font-size:7px!important}
+}
+
+/* V46 — Section 4 presentation polish. Visual-only; booking JavaScript/PHP is untouched. */
+@media(min-width:1001px){
+  .design-s4{
+    height:667px!important;
+    min-height:667px!important;
+    padding:0!important;
+    background:#fff!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .section4-shell{
+    width:1185px!important;
+    height:667px!important;
+    max-width:calc(100% - 30px)!important;
+    margin:0 auto!important;
+    display:grid!important;
+    grid-template-columns:581px 575px!important;
+    gap:29px!important;
+    align-items:stretch!important;
+    filter:none!important;
+  }
+
+  /* LEFT LOCATION HOTSPOT — tall, balanced presentation with the original
+     Design-4 map artwork kept at its natural 581x328 aspect ratio. */
+  .section4-hotspot{
+    width:581px!important;
+    height:667px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:hidden!important;
+    border:1px solid #171717!important;
+    background:#ed1c24!important;
+    box-shadow:0 14px 30px rgba(0,0,0,.10)!important;
+  }
+  .section4-hotspot:before{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;right:0!important;top:0!important;
+    height:7px!important;
+    background:#c91420!important;
+    z-index:10!important;
+  }
+  .section4-hotspot:after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    left:0!important;right:0!important;
+    top:151px!important;
+    height:328px!important;
+    z-index:3!important;
+    pointer-events:none!important;
+    background:linear-gradient(90deg,rgba(237,28,36,.98) 0%,rgba(237,28,36,.78) 29%,rgba(237,28,36,.18) 52%,rgba(237,28,36,0) 75%)!important;
+  }
+  .kolkata-map-art{
+    position:absolute!important;
+    left:0!important;
+    top:151px!important;
+    width:581px!important;
+    height:328px!important;
+    right:auto!important;
+    overflow:hidden!important;
+    z-index:2!important;
+    pointer-events:none!important;
+  }
+  .kolkata-map-art img{
+    display:block!important;
+    width:581px!important;
+    height:328px!important;
+    max-width:none!important;
+    object-fit:fill!important;
+    object-position:center!important;
+  }
+  .hotspot-pins{
+    position:absolute!important;
+    inset:0!important;
+    z-index:8!important;
+    display:block!important;
+    pointer-events:auto!important;
+  }
+  .hotspot-pin{
+    width:34px!important;
+    height:34px!important;
+    border:0!important;
+    background:transparent!important;
+    padding:0!important;
+    cursor:pointer!important;
+    transform:translate(-50%,-50%)!important;
+  }
+  .hotspot-pin span{
+    display:grid!important;
+    place-items:center!important;
+    position:absolute!important;
+    left:50%!important;top:50%!important;
+    transform:translate(-50%,-50%)!important;
+    width:27px!important;height:27px!important;
+    border:2px solid #fff!important;
+    border-radius:50%!important;
+    background:#e41e2b!important;
+    color:#fff!important;
+    font:900 8px/1 TCCC,Arial,sans-serif!important;
+    box-shadow:0 3px 10px rgba(0,0,0,.24)!important;
+    opacity:.98!important;
+  }
+  .hotspot-pin:after{
+    content:""!important;
+    position:absolute!important;
+    inset:3px!important;
+    border:1px solid rgba(255,255,255,.55)!important;
+    border-radius:50%!important;
+    box-shadow:none!important;
+  }
+  .hotspot-pin.active span{
+    width:32px!important;height:32px!important;
+    background:#fff!important;
+    color:#e41e2b!important;
+    border-color:#e41e2b!important;
+    box-shadow:0 0 0 3px rgba(255,255,255,.55),0 5px 14px rgba(0,0,0,.25)!important;
+  }
+  .hotspot-copy{
+    left:42px!important;
+    top:48px!important;
+    width:245px!important;
+    z-index:9!important;
+  }
+  .hotspot-copy .plan-label{
+    display:block!important;
+    font-size:12px!important;
+    letter-spacing:1.5px!important;
+    font-weight:500!important;
+  }
+  .hotspot-copy h2{
+    font-size:25px!important;
+    line-height:.98!important;
+    letter-spacing:.1px!important;
+    margin:73px 0 14px!important;
+    text-shadow:0 2px 12px rgba(160,0,8,.16)!important;
+  }
+  .hotspot-copy p{
+    width:190px!important;
+    font-size:12px!important;
+    line-height:1.3!important;
+    margin:0!important;
+  }
+  .hotspot-footer{
+    left:42px!important;
+    right:36px!important;
+    bottom:38px!important;
+    z-index:10!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+  }
+  .see-map-btn{
+    color:#fff!important;
+    font-size:11px!important;
+    gap:9px!important;
+  }
+  .see-map-thumb{
+    width:52px!important;height:52px!important;
+    border:2px solid rgba(255,255,255,.95)!important;
+    box-shadow:0 4px 12px rgba(0,0,0,.18)!important;
+  }
+  .hotspot-book-btn{
+    min-width:128px!important;
+    padding:10px 14px 10px 17px!important;
+    font-size:11px!important;
+    gap:18px!important;
+    border-width:1px!important;
+    background:rgba(180,0,10,.08)!important;
+    transition:transform .2s ease,background .2s ease!important;
+  }
+  .hotspot-book-btn:hover{transform:translateY(-2px)!important;background:rgba(255,255,255,.12)!important}
+
+  /* RIGHT BOOKING — cleaner hierarchy and breathing room. */
+  .section4-booking-card{
+    width:575px!important;height:667px!important;min-height:667px!important;
+    box-sizing:border-box!important;
+    padding:16px 31px 18px!important;
+    border:1px solid #171717!important;
+    box-shadow:0 14px 30px rgba(0,0,0,.10)!important;
+    overflow:hidden!important;
+    background:#fff!important;
+  }
+  .section4-booking-card:before{height:5px!important;background:#e41e2b!important}
+  .section4-location-head{
+    height:219px!important;min-height:219px!important;
+    padding:2px 0 10px!important;
+    grid-template-columns:217px 275px!important;
+    grid-template-rows:92px 1fr!important;
+    column-gap:20px!important;
+    border-bottom:1px solid #dfc2c4!important;
+  }
+  .section4-address{font-size:10px!important;line-height:1.35!important;font-weight:700!important;padding-top:8px!important}
+  .section4-direction{font-size:10px!important;padding:9px 15px!important;margin-top:4px!important;box-shadow:0 5px 12px rgba(228,30,43,.16)!important}
+  .section4-map{width:275px!important;height:205px!important;border:1px solid #eee!important}
+  .section4-booking-card .booking-card-head{
+    height:70px!important;padding:15px 0 10px!important;
+    text-align:center!important;
+  }
+  .section4-booking-card .booking-card-head span{font-size:9px!important;letter-spacing:2.4px!important}
+  .section4-booking-card .booking-card-head h2{font-size:26px!important;margin:4px 0 5px!important}
+  .section4-booking-card .booking-card-head p{font-size:10px!important}
+  .section4-booking-card .book-step.wide{
+    height:144px!important;min-height:144px!important;
+    padding:27px 11px 10px!important;
+    border-color:#ddb7ba!important;
+  }
+  .section4-booking-card .step-content h3{font-size:18px!important;margin-bottom:11px!important}
+  .section4-booking-card .date-buttons{gap:10px!important;justify-content:center!important}
+  .section4-booking-card .date-btn{flex:0 0 70px!important;width:70px!important;height:74px!important;min-height:74px!important}
+  .section4-booking-card .book-bottom-grid{height:108px!important;gap:11px!important}
+  .section4-booking-card .book-bottom-grid .book-step{height:108px!important;min-height:108px!important;margin-top:25px!important}
+  .section4-booking-card .book-bottom-grid .step-content h3{font-size:15px!important}
+  .section4-booking-card .booking-note{height:41px!important;padding:11px 3px 7px!important}
+  .section4-booking-card .confirm-btn{height:31px!important;padding:7px 19px!important;margin:0 auto!important;box-shadow:0 7px 16px rgba(228,30,43,.20)!important}
+}
+
+@media(max-width:1000px){
+  .design-s4{height:auto!important;min-height:0!important;padding:30px 0!important}
+  .section4-shell{width:min(94%,720px)!important;height:auto!important;grid-template-columns:1fr!important;gap:18px!important}
+  .section4-hotspot{width:100%!important;height:360px!important;margin:0!important}
+  .kolkata-map-art{left:0!important;top:120px!important;width:100%!important;height:auto!important;aspect-ratio:581/328!important}
+  .kolkata-map-art img{width:100%!important;height:100%!important}
+  .hotspot-copy{left:24px!important;top:25px!important;width:185px!important}
+  .hotspot-copy h2{font-size:19px!important;margin-top:55px!important}
+  .hotspot-footer{left:24px!important;right:24px!important;bottom:24px!important}
+  .section4-booking-card{width:100%!important;height:auto!important;min-height:0!important}
+}
+
+
+/* V47 — Section 4 final presentation correction.
+   Visual-only. V31 booking PHP/JS behavior is intentionally unchanged. */
+@media(min-width:1001px){
+  .design-s4{
+    height:667px!important;
+    min-height:667px!important;
+    padding:0!important;
+    background:#fff!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+
+  .section4-shell{
+    width:1185px!important;
+    max-width:calc(100% - 30px)!important;
+    height:667px!important;
+    margin:0 auto!important;
+    display:grid!important;
+    grid-template-columns:581px 575px!important;
+    gap:29px!important;
+    align-items:stretch!important;
+    filter:none!important;
+  }
+
+  /* LEFT LOCATION HOTSPOT
+     The map artwork is kept at its natural portrait ratio and fills the
+     complete equal-height panel instead of leaving large blank bands. */
+  .section4-hotspot{
+    width:581px!important;
+    height:667px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    position:relative!important;
+    overflow:hidden!important;
+    border:1px solid #171717!important;
+    background:#ed1c24!important;
+    box-shadow:0 14px 30px rgba(0,0,0,.10)!important;
+  }
+
+  .section4-hotspot:before{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;right:0!important;top:0!important;
+    height:6px!important;
+    background:#c91420!important;
+    z-index:10!important;
+  }
+
+  /* Natural 250:340 artwork ratio -> approximately 491:667. */
+  .kolkata-map-art{
+    position:absolute!important;
+    left:90px!important;
+    top:0!important;
+    right:auto!important;
+    width:491px!important;
+    height:667px!important;
+    z-index:2!important;
+    overflow:hidden!important;
+    pointer-events:none!important;
+  }
+
+  .kolkata-map-art img{
+    display:block!important;
+    width:491px!important;
+    height:667px!important;
+    max-width:none!important;
+    object-fit:fill!important;
+    object-position:center!important;
+  }
+
+  /* Readability layer only on the copy side; it does not cover the map
+     hotspots on the right. */
+  .section4-hotspot:after{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;
+    top:0!important;
+    width:330px!important;
+    height:667px!important;
+    z-index:3!important;
+    pointer-events:none!important;
+    background:linear-gradient(90deg,
+      rgba(237,28,36,.98) 0%,
+      rgba(237,28,36,.94) 38%,
+      rgba(237,28,36,.62) 68%,
+      rgba(237,28,36,0) 100%)!important;
+  }
+
+  .hotspot-pins{
+    position:absolute!important;
+    inset:0!important;
+    z-index:8!important;
+    display:block!important;
+    pointer-events:auto!important;
+  }
+
+  .hotspot-pin{
+    width:34px!important;
+    height:34px!important;
+    border:0!important;
+    background:transparent!important;
+    padding:0!important;
+    cursor:pointer!important;
+    transform:translate(-50%,-50%)!important;
+  }
+
+  .hotspot-pin span{
+    display:grid!important;
+    place-items:center!important;
+    position:absolute!important;
+    left:50%!important;
+    top:50%!important;
+    transform:translate(-50%,-50%)!important;
+    width:29px!important;
+    height:29px!important;
+    border:2px solid #fff!important;
+    border-radius:50%!important;
+    background:#e41e2b!important;
+    color:#fff!important;
+    font:900 8px/1 TCCC,Arial,sans-serif!important;
+    box-shadow:0 3px 10px rgba(0,0,0,.24)!important;
+    opacity:.97!important;
+  }
+
+  .hotspot-pin:after{
+    content:""!important;
+    position:absolute!important;
+    inset:2px!important;
+    border:1px solid rgba(255,255,255,.65)!important;
+    border-radius:50%!important;
+  }
+
+  .hotspot-pin:hover span,
+  .hotspot-pin.active span{
+    width:33px!important;
+    height:33px!important;
+    background:#fff!important;
+    color:#e41e2b!important;
+    border-color:#e41e2b!important;
+    box-shadow:0 0 0 4px rgba(255,255,255,.22),0 5px 14px rgba(0,0,0,.25)!important;
+  }
+
+  .hotspot-copy{
+    left:38px!important;
+    top:43px!important;
+    width:230px!important;
+    z-index:9!important;
+  }
+
+  .hotspot-copy .plan-label{
+    display:block!important;
+    font-size:12px!important;
+    letter-spacing:1.4px!important;
+    font-weight:500!important;
+  }
+
+  .hotspot-copy h2{
+    font-size:24px!important;
+    line-height:1.0!important;
+    letter-spacing:.1px!important;
+    margin:118px 0 13px!important;
+    font-weight:900!important;
+    text-shadow:0 2px 12px rgba(150,0,8,.15)!important;
+  }
+
+  .hotspot-copy p{
+    width:185px!important;
+    font-size:12px!important;
+    line-height:1.28!important;
+    margin:0!important;
+  }
+
+  .hotspot-footer{
+    left:38px!important;
+    right:32px!important;
+    bottom:35px!important;
+    z-index:10!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+  }
+
+  .see-map-btn{
+    color:#fff!important;
+    font-size:11px!important;
+    gap:8px!important;
+  }
+
+  .see-map-thumb{
+    width:52px!important;
+    height:52px!important;
+    border:2px solid rgba(255,255,255,.95)!important;
+    box-shadow:0 4px 12px rgba(0,0,0,.18)!important;
+  }
+
+  .hotspot-book-btn{
+    min-width:130px!important;
+    padding:10px 14px 10px 17px!important;
+    font-size:11px!important;
+    gap:17px!important;
+    justify-content:space-between!important;
+    background:rgba(180,0,10,.10)!important;
+  }
+
+  /* RIGHT BOOKING CARD — preserve existing V31 behavior, improve hierarchy. */
+  .section4-booking-card{
+    width:575px!important;
+    height:667px!important;
+    min-height:667px!important;
+    box-sizing:border-box!important;
+    padding:16px 31px 18px!important;
+    border:1px solid #171717!important;
+    overflow:hidden!important;
+    background:#fff!important;
+    box-shadow:0 14px 30px rgba(0,0,0,.10)!important;
+  }
+
+  .section4-location-head{
+    height:219px!important;
+    min-height:219px!important;
+  }
+
+  .section4-booking-card .booking-card-head{
+    height:70px!important;
+    padding:15px 0 10px!important;
+    text-align:center!important;
+  }
+
+  .section4-booking-card .booking-card-head h2{
+    font-size:26px!important;
+    line-height:1!important;
+    margin:4px 0 5px!important;
+  }
+
+  /* Keep a single available date visually centered when the database
+     currently returns only one date; multiple dates still render normally. */
+  .section4-booking-card .date-buttons{
+    justify-content:center!important;
+    align-items:center!important;
+  }
+
+  .section4-booking-card .date-btn{
+    transition:transform .18s ease,box-shadow .18s ease!important;
+  }
+
+  .section4-booking-card .date-btn:hover{
+    transform:translateY(-2px)!important;
+    box-shadow:0 6px 14px rgba(228,30,43,.13)!important;
+  }
+
+  .section4-booking-card .book-bottom-grid{
+    align-items:stretch!important;
+  }
+
+  .section4-booking-card .book-bottom-grid .book-step{
+    overflow:hidden!important;
+  }
+
+  .section4-booking-card .seat-step-design4 .mini-seat-grid{
+    max-height:48px!important;
+    overflow-y:auto!important;
+  }
+
+  .section4-booking-card .confirm-btn{
+    box-shadow:0 7px 16px rgba(228,30,43,.20)!important;
+  }
+}
+
+@media(max-width:1000px){
+  .design-s4{
+    height:auto!important;
+    min-height:0!important;
+    padding:30px 0!important;
+  }
+
+  .section4-shell{
+    width:min(94%,720px)!important;
+    height:auto!important;
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+  }
+
+  .section4-hotspot{
+    width:100%!important;
+    height:520px!important;
+    margin:0!important;
+  }
+
+  .kolkata-map-art{
+    left:auto!important;
+    right:0!important;
+    top:0!important;
+    width:min(62%,420px)!important;
+    height:100%!important;
+  }
+
+  .kolkata-map-art img{
+    width:100%!important;
+    height:100%!important;
+  }
+}
+
+/* V48 — Section 4 breathing room.
+   Visual-only: separate Design 4 from the ticker/adjacent sections.
+   Booking/location functionality is untouched. */
+@media(min-width:1001px){
+  .design-s4{
+    height:auto!important;
+    min-height:0!important;
+    padding:46px 0 50px!important;
+    margin:0!important;
+    background:#fff!important;
+    box-sizing:border-box!important;
+    display:flex!important;
+    align-items:center!important;
+    position:relative!important;
+    isolation:isolate!important;
+  }
+  .section4-shell{
+    margin:0 auto!important;
+  }
+}
+@media(max-width:1000px){
+  .design-s4{
+    padding:34px 0 40px!important;
+    margin:0!important;
+    background:#fff!important;
+  }
+}
+
+
+/* V49 — Section 4 usability polish.
+   Presentation only: keep the existing V31 booking data/IDs/form flow intact. */
+@media(min-width:1001px){
+  .design-s4{
+    padding:32px 0 36px!important;
+    min-height:739px!important;
+    height:739px!important;
+    background:#fff!important;
+  }
+  .section4-shell{
+    height:667px!important;
+    align-items:stretch!important;
+  }
+
+  /* Remove the visible bottom image/border line from the hotspot artwork. */
+  .kolkata-map-art{
+    height:667px!important;
+    overflow:hidden!important;
+    background:#ed1c24!important;
+  }
+  .kolkata-map-art img{
+    height:671px!important;
+    transform:translateY(-2px)!important;
+    clip-path:inset(0 0 4px 0)!important;
+  }
+
+  /* Give the location artwork breathing room without adding a white/gradient strip. */
+  .section4-hotspot{
+    height:667px!important;
+    border-radius:2px!important;
+    background:#ed1c24!important;
+  }
+  .section4-hotspot:after{
+    background:linear-gradient(90deg,
+      rgba(237,28,36,.96) 0%,
+      rgba(237,28,36,.78) 28%,
+      rgba(237,28,36,.12) 57%,
+      rgba(237,28,36,0) 74%)!important;
+  }
+
+  /* Booking card: fit all 15 seats without an internal scrollbar. */
+  .section4-booking-card{
+    height:667px!important;
+    min-height:667px!important;
+    padding:12px 28px 14px!important;
+  }
+  .section4-location-head{
+    height:192px!important;
+    min-height:192px!important;
+    padding-bottom:8px!important;
+  }
+  .section4-map{
+    height:178px!important;
+  }
+  .section4-booking-card .booking-card-head{
+    height:62px!important;
+    padding:10px 0 7px!important;
+  }
+  .section4-booking-card .booking-card-head h2{
+    font-size:25px!important;
+    margin:3px 0 3px!important;
+  }
+  .section4-booking-card .booking-card-head p{
+    font-size:9px!important;
+  }
+
+  .section4-booking-card .book-step.wide{
+    height:124px!important;
+    min-height:124px!important;
+    padding:23px 11px 8px!important;
+  }
+  .section4-booking-card .step-content h3{
+    font-size:17px!important;
+    margin-bottom:8px!important;
+  }
+  .section4-booking-card .date-btn{
+    height:68px!important;
+    min-height:68px!important;
+    width:68px!important;
+    min-width:68px!important;
+  }
+  .section4-booking-card .date-btn strong{
+    font-size:25px!important;
+  }
+
+  .section4-booking-card .book-bottom-grid{
+    height:145px!important;
+    gap:10px!important;
+  }
+  .section4-booking-card .book-bottom-grid .book-step{
+    height:145px!important;
+    min-height:145px!important;
+    margin-top:18px!important;
+    padding:24px 10px 7px!important;
+  }
+  .section4-booking-card .book-bottom-grid .step-content h3{
+    font-size:15px!important;
+    margin-bottom:7px!important;
+  }
+
+  /* 10 one-hour pills can sit comfortably in two rows. */
+  .section4-booking-card .slot-pills{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-auto-rows:minmax(25px,auto)!important;
+    gap:5px!important;
+    min-height:72px!important;
+    max-height:76px!important;
+    overflow:hidden!important;
+    align-content:center!important;
+  }
+  .section4-booking-card .slot-btn{
+    min-width:0!important;
+    width:100%!important;
+    min-height:25px!important;
+    padding:4px 3px!important;
+    font-size:7px!important;
+    white-space:nowrap!important;
+  }
+
+  /* Show the complete 15-seat set: 5 columns × 3 rows, no scrolling. */
+  .section4-booking-card .mini-seat-grid{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(22px,1fr))!important;
+    grid-auto-rows:22px!important;
+    gap:5px!important;
+    max-height:none!important;
+    height:76px!important;
+    overflow:visible!important;
+    align-content:center!important;
+  }
+  .section4-booking-card .mini-seat{
+    width:100%!important;
+    height:22px!important;
+    min-height:22px!important;
+    font-size:8px!important;
+  }
+  .section4-booking-card .seat-step-design4 .seat-info{
+    font-size:7px!important;
+    min-height:10px!important;
+    margin:2px 0 0!important;
+    white-space:nowrap!important;
+  }
+
+  .section4-booking-card .booking-note{
+    height:28px!important;
+    padding:7px 3px 4px!important;
+    font-size:8px!important;
+  }
+  .section4-booking-card .confirm-btn{
+    height:32px!important;
+    padding:7px 18px!important;
+    font-size:9px!important;
+  }
+}
+
+@media(max-width:1000px){
+  .design-s4{
+    padding:30px 0 36px!important;
+  }
+  .section4-booking-card .mini-seat-grid{
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .section4-booking-card .slot-pills{
+    max-height:none!important;
+    overflow:visible!important;
+  }
+}
+
+
+/* V50 — FINAL SECTION 4 PRESENTATION / CACHE-BUST
+   Visual-only. V31 booking data, IDs, POST fields and JS flow are preserved. */
+@media(min-width:1001px){
+  .design-s4{
+    height:auto!important;
+    min-height:0!important;
+    padding:54px 0 58px!important;
+    margin:0!important;
+    background:#fff!important;
+    box-sizing:border-box!important;
+    overflow:visible!important;
+  }
+
+  .section4-shell{
+    width:min(1185px,calc(100% - 48px))!important;
+    height:667px!important;
+    margin:0 auto!important;
+    padding:0!important;
+    gap:28px!important;
+    align-items:stretch!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  }
+
+  /* LEFT: clean red hotspot panel, no white strip at the bottom */
+  .section4-hotspot{
+    width:100%!important;
+    height:667px!important;
+    min-height:667px!important;
+    margin:0!important;
+    background:#ed1c24!important;
+    border:1px solid #1d1d1d!important;
+    overflow:hidden!important;
+    position:relative!important;
+  }
+  .section4-hotspot:after{
+    background:linear-gradient(90deg,
+      rgba(237,28,36,.97) 0%,
+      rgba(237,28,36,.82) 30%,
+      rgba(237,28,36,.18) 58%,
+      rgba(237,28,36,0) 78%)!important;
+    z-index:1!important;
+  }
+  .kolkata-map-art{
+    top:0!important;
+    right:74px!important;
+    width:390px!important;
+    height:667px!important;
+    z-index:2!important;
+    overflow:hidden!important;
+    background:#ed1c24!important;
+  }
+  .kolkata-map-art img{
+    width:100%!important;
+    height:calc(100% + 16px)!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+    transform:translateY(-2px)!important;
+    clip-path:none!important;
+  }
+  /* Solid red mask removes the source artwork's bottom white rule. */
+  .kolkata-map-art:after{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:0!important;
+    height:18px!important;
+    background:#ed1c24!important;
+    z-index:3!important;
+    pointer-events:none!important;
+  }
+  .hotspot-pins{z-index:5!important}
+  .hotspot-copy{
+    left:32px!important;
+    top:30px!important;
+    width:235px!important;
+    z-index:6!important;
+  }
+  .hotspot-copy h2{
+    margin-top:135px!important;
+    font-size:22px!important;
+    line-height:1.04!important;
+  }
+  .hotspot-copy p{
+    width:190px!important;
+    font-size:12px!important;
+  }
+  .hotspot-footer{
+    left:32px!important;
+    right:30px!important;
+    bottom:27px!important;
+    z-index:8!important;
+  }
+
+  /* RIGHT: use all available height and keep every control visible. */
+  .section4-booking-card{
+    width:100%!important;
+    height:667px!important;
+    min-height:667px!important;
+    padding:12px 28px 12px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+  .section4-location-head{
+    height:180px!important;
+    min-height:180px!important;
+    padding-bottom:7px!important;
+  }
+  .section4-map{
+    height:165px!important;
+  }
+  .section4-booking-card .booking-card-head{
+    height:58px!important;
+    padding:9px 0 6px!important;
+    box-sizing:border-box!important;
+  }
+  .section4-booking-card .booking-card-head h2{
+    font-size:25px!important;
+    line-height:1.05!important;
+    margin:3px 0 3px!important;
+  }
+  .section4-booking-card .booking-card-head p{
+    font-size:9px!important;
+  }
+
+  /* Date block */
+  .section4-booking-card .book-step.wide{
+    height:112px!important;
+    min-height:112px!important;
+    padding:22px 10px 7px!important;
+    margin-top:7px!important;
+    box-sizing:border-box!important;
+  }
+  .section4-booking-card .step-content h3{
+    font-size:16px!important;
+    margin-bottom:6px!important;
+  }
+  .section4-booking-card .date-buttons{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    justify-content:center!important;
+    align-items:center!important;
+    gap:7px!important;
+    width:100%!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .date-btn{
+    flex:0 0 68px!important;
+    width:68px!important;
+    min-width:68px!important;
+    height:64px!important;
+    min-height:64px!important;
+    padding:4px 2px!important;
+  }
+  .section4-booking-card .date-btn span{font-size:8px!important}
+  .section4-booking-card .date-btn strong{font-size:23px!important;margin:2px 0!important}
+  .section4-booking-card .date-btn small{font-size:8px!important}
+
+  /* Slot + seat blocks: no internal scrolling. */
+  .section4-booking-card .book-bottom-grid{
+    height:151px!important;
+    min-height:151px!important;
+    gap:10px!important;
+    margin-top:9px!important;
+  }
+  .section4-booking-card .book-bottom-grid .book-step{
+    height:151px!important;
+    min-height:151px!important;
+    margin-top:0!important;
+    padding:23px 9px 7px!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .book-bottom-grid .step-content h3{
+    font-size:15px!important;
+    margin-bottom:6px!important;
+    white-space:nowrap!important;
+  }
+
+  /* Up to 10 configured 1-hour slots: 5 columns × 2 rows.
+     Only slots actually present in Admin are rendered. */
+  .section4-booking-card .slot-pills{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    grid-auto-rows:27px!important;
+    gap:5px!important;
+    width:100%!important;
+    min-height:59px!important;
+    max-height:59px!important;
+    overflow:hidden!important;
+    align-content:center!important;
+  }
+  .section4-booking-card .slot-btn{
+    width:100%!important;
+    min-width:0!important;
+    height:27px!important;
+    min-height:27px!important;
+    padding:3px 2px!important;
+    font-size:6.8px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    border-radius:999px!important;
+  }
+  .section4-booking-card .slot-empty{
+    grid-column:1/-1!important;
+    text-align:center!important;
+  }
+
+  /* All 15 seats visible: 5 × 3, no scrollbar. */
+  .section4-booking-card .mini-seat-grid{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    grid-template-rows:repeat(3,22px)!important;
+    grid-auto-rows:22px!important;
+    gap:5px!important;
+    width:100%!important;
+    height:76px!important;
+    max-height:none!important;
+    overflow:visible!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+  }
+  .section4-booking-card .mini-seat{
+    width:100%!important;
+    height:22px!important;
+    min-height:22px!important;
+    font-size:8px!important;
+    line-height:1!important;
+  }
+  .section4-booking-card .seat-step-design4 .seat-info{
+    font-size:7px!important;
+    line-height:1.05!important;
+    min-height:9px!important;
+    margin:2px 0 0!important;
+    white-space:nowrap!important;
+  }
+
+  .section4-booking-card .booking-note{
+    height:24px!important;
+    min-height:24px!important;
+    padding:5px 3px 3px!important;
+    font-size:7.5px!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .confirm-btn{
+    height:31px!important;
+    min-height:31px!important;
+    margin:7px auto 0!important;
+    padding:6px 18px!important;
+    font-size:9px!important;
+  }
+}
+
+@media(max-width:1000px){
+  .design-s4{
+    padding:38px 0 44px!important;
+    background:#fff!important;
+  }
+  .section4-shell{
+    width:min(94%,720px)!important;
+    height:auto!important;
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+  }
+  .section4-hotspot,
+  .section4-booking-card{
+    height:auto!important;
+    min-height:0!important;
+  }
+  .kolkata-map-art:after{height:12px!important}
+  .section4-booking-card .slot-pills{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .section4-booking-card .mini-seat-grid{
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    grid-template-rows:repeat(3,28px)!important;
+    height:auto!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+}
+
+/* V51 — Section 4 final desktop usability/presentation pass.
+   Visual CSS only. V31 booking HTML/JS/PHP, IDs, slot IDs and seat logic remain unchanged. */
+@media(min-width:1001px){
+  .design-s4{
+    height:auto!important;
+    min-height:0!important;
+    padding:58px 0 62px!important;
+    margin:0!important;
+    background:#fff!important;
+    display:flex!important;
+    align-items:center!important;
+    overflow:visible!important;
+  }
+  .section4-shell{
+    width:min(1220px,calc(100% - 48px))!important;
+    height:720px!important;
+    margin:0 auto!important;
+    padding:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:30px!important;
+    align-items:stretch!important;
+  }
+
+  /* LEFT: prominent interactive location hotspot */
+  .section4-hotspot{
+    width:100%!important;
+    height:720px!important;
+    min-height:720px!important;
+    margin:0!important;
+    position:relative!important;
+    overflow:hidden!important;
+    background:#ed1c24!important;
+    border:1px solid #1b1b1b!important;
+    box-shadow:0 12px 32px rgba(0,0,0,.10)!important;
+  }
+  .section4-hotspot:before{display:none!important}
+  .section4-hotspot:after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:0 auto 0 0!important;
+    width:54%!important;
+    z-index:3!important;
+    pointer-events:none!important;
+    background:linear-gradient(90deg,rgba(237,28,36,.98) 0%,rgba(237,28,36,.90) 48%,rgba(237,28,36,.28) 84%,rgba(237,28,36,0) 100%)!important;
+  }
+  .kolkata-map-art{
+    left:auto!important;
+    right:0!important;
+    top:0!important;
+    width:100%!important;
+    height:720px!important;
+    z-index:2!important;
+    overflow:hidden!important;
+    background:#ed1c24!important;
+  }
+  .kolkata-map-art img{
+    width:100%!important;
+    height:100%!important;
+    max-width:none!important;
+    object-fit:fill!important;
+    object-position:center!important;
+    transform:none!important;
+    clip-path:none!important;
+  }
+  .kolkata-map-art:after{display:none!important}
+
+  .hotspot-pins{z-index:8!important}
+  .hotspot-copy{
+    left:38px!important;
+    top:38px!important;
+    width:250px!important;
+    z-index:9!important;
+  }
+  .hotspot-copy .plan-label{
+    font-size:12px!important;
+    letter-spacing:1.5px!important;
+  }
+  .hotspot-copy h2{
+    font-size:25px!important;
+    line-height:1.0!important;
+    margin:165px 0 14px!important;
+    letter-spacing:.1px!important;
+  }
+  .hotspot-copy p{
+    width:200px!important;
+    font-size:12px!important;
+    line-height:1.3!important;
+  }
+  .hotspot-footer{
+    left:38px!important;
+    right:34px!important;
+    bottom:32px!important;
+    z-index:10!important;
+  }
+  .see-map-btn{font-size:11px!important;gap:9px!important}
+  .see-map-thumb{width:54px!important;height:54px!important}
+  .hotspot-book-btn{
+    min-width:138px!important;
+    padding:11px 15px!important;
+    font-size:11px!important;
+  }
+
+  /* RIGHT: booking card — enough room for every configured slot and all 15 seats */
+  .section4-booking-card{
+    width:100%!important;
+    height:720px!important;
+    min-height:720px!important;
+    padding:14px 30px 14px!important;
+    border:1px solid #1b1b1b!important;
+    overflow:hidden!important;
+    background:#fff!important;
+    box-shadow:0 12px 32px rgba(0,0,0,.10)!important;
+  }
+  .section4-booking-card:before{height:4px!important}
+
+  .section4-location-head{
+    height:190px!important;
+    min-height:190px!important;
+    padding:2px 0 8px!important;
+    grid-template-columns:minmax(0,1fr) 280px!important;
+    grid-template-rows:90px 1fr!important;
+    column-gap:20px!important;
+  }
+  .section4-address{font-size:10px!important;line-height:1.3!important;padding-top:8px!important}
+  .section4-direction{font-size:10px!important;padding:9px 15px!important;margin-top:4px!important}
+  .section4-map{width:280px!important;height:172px!important}
+  .section4-booking-card .booking-card-head{
+    height:66px!important;
+    padding:10px 0 6px!important;
+  }
+  .section4-booking-card .booking-card-head span{font-size:9px!important;letter-spacing:2.5px!important}
+  .section4-booking-card .booking-card-head h2{font-size:27px!important;line-height:1.02!important;margin:4px 0!important}
+  .section4-booking-card .booking-card-head p{font-size:10px!important;line-height:1.15!important}
+
+  /* 01 — date: all available dates visible, no horizontal scrolling */
+  .section4-booking-card .book-step.wide{
+    height:132px!important;
+    min-height:132px!important;
+    margin-top:6px!important;
+    padding:24px 12px 8px!important;
+  }
+  .section4-booking-card .step-no{font-size:32px!important;top:-17px!important}
+  .section4-booking-card .step-content h3{font-size:17px!important;margin-bottom:8px!important}
+  .section4-booking-card .date-buttons{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    justify-content:center!important;
+    align-items:center!important;
+    gap:10px!important;
+    width:100%!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .date-btn{
+    flex:0 0 72px!important;
+    width:72px!important;
+    min-width:72px!important;
+    height:76px!important;
+    min-height:76px!important;
+  }
+  .section4-booking-card .date-btn span{font-size:9px!important}
+  .section4-booking-card .date-btn strong{font-size:27px!important;margin:3px 0!important}
+  .section4-booking-card .date-btn small{font-size:9px!important}
+
+  /* 02 + 03: full contents, no scrollbars */
+  .section4-booking-card .book-bottom-grid{
+    height:176px!important;
+    min-height:176px!important;
+    margin-top:10px!important;
+    gap:12px!important;
+  }
+  .section4-booking-card .book-bottom-grid .book-step{
+    height:176px!important;
+    min-height:176px!important;
+    margin-top:0!important;
+    padding:25px 11px 9px!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .book-bottom-grid .step-content h3{
+    font-size:16px!important;
+    margin-bottom:10px!important;
+    white-space:nowrap!important;
+  }
+
+  /* Slot pills: up to 10 one-hour slots, 5 × 2, readable and complete. */
+  .section4-booking-card .slot-pills{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    grid-template-rows:repeat(2,34px)!important;
+    gap:7px!important;
+    width:100%!important;
+    min-height:75px!important;
+    max-height:75px!important;
+    overflow:hidden!important;
+    align-content:center!important;
+  }
+  .section4-booking-card .slot-btn{
+    width:100%!important;
+    min-width:0!important;
+    height:34px!important;
+    min-height:34px!important;
+    padding:4px 3px!important;
+    font-size:8px!important;
+    line-height:1.05!important;
+    white-space:nowrap!important;
+    border-radius:999px!important;
+  }
+  .section4-booking-card .slot-empty{font-size:10px!important;grid-column:1/-1!important;text-align:center!important}
+
+  /* Seats: all 15 visible at once, 5 × 3, never an internal scrollbar. */
+  .section4-booking-card .mini-seat-grid{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    grid-template-rows:repeat(3,28px)!important;
+    grid-auto-rows:28px!important;
+    gap:7px!important;
+    width:100%!important;
+    height:98px!important;
+    max-height:none!important;
+    overflow:visible!important;
+    padding:0!important;
+  }
+  .section4-booking-card .mini-seat{
+    width:100%!important;
+    height:28px!important;
+    min-height:28px!important;
+    font-size:9px!important;
+  }
+  .section4-booking-card .seat-step-design4 .seat-info{
+    font-size:8px!important;
+    line-height:1.1!important;
+    min-height:10px!important;
+    margin:4px 0 0!important;
+    white-space:nowrap!important;
+  }
+
+  .section4-booking-card .booking-note{
+    height:28px!important;
+    min-height:28px!important;
+    padding:7px 4px 4px!important;
+    font-size:8px!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .confirm-btn{
+    height:34px!important;
+    min-height:34px!important;
+    margin:8px auto 0!important;
+    padding:7px 20px!important;
+    font-size:10px!important;
+  }
+}
+
+@media(max-width:1000px){
+  .design-s4{padding:40px 0 48px!important}
+  .section4-shell{width:min(94%,720px)!important;gap:20px!important}
+  .section4-hotspot{height:520px!important;min-height:520px!important}
+  .kolkata-map-art{top:0!important;right:0!important;left:auto!important;width:68%!important;height:100%!important}
+  .kolkata-map-art img{width:100%!important;height:100%!important;object-fit:fill!important}
+  .section4-booking-card{height:auto!important;min-height:0!important}
+  .section4-booking-card .slot-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;max-height:none!important;height:auto!important}
+  .section4-booking-card .mini-seat-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-template-rows:repeat(3,28px)!important;height:auto!important}
+}
+
+/* ==========================================================
+   V52 — Section 4 premium polish / clarity pass
+   Booking backend, form names, IDs, slot IDs and seat logic are unchanged.
+   ========================================================== */
+@media (min-width:1001px){
+  .design-s4{
+    min-height:0!important;
+    height:auto!important;
+    padding:64px 0 70px!important;
+    background:#fff!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .section4-shell{
+    width:min(1240px,calc(100% - 48px))!important;
+    height:740px!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:28px!important;
+    align-items:stretch!important;
+  }
+
+  /* LEFT LOCATION / HOTSPOT */
+  .section4-hotspot{
+    height:740px!important;
+    min-height:740px!important;
+    border-radius:2px!important;
+    box-shadow:0 16px 38px rgba(0,0,0,.10)!important;
+    isolation:isolate!important;
+  }
+  .section4-hotspot:after{
+    width:58%!important;
+    background:linear-gradient(90deg,rgba(237,28,36,.99) 0%,rgba(237,28,36,.94) 45%,rgba(237,28,36,.46) 78%,rgba(237,28,36,0) 100%)!important;
+  }
+  .kolkata-map-art{
+    width:100%!important;
+    height:740px!important;
+    right:0!important;
+    top:0!important;
+  }
+  .kolkata-map-art img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:center!important;
+  }
+  .hotspot-copy{
+    left:42px!important;
+    top:42px!important;
+    width:270px!important;
+  }
+  .hotspot-copy .plan-label{
+    font-size:12px!important;
+    letter-spacing:1.8px!important;
+  }
+  .hotspot-copy h2{
+    margin:176px 0 15px!important;
+    font-size:27px!important;
+    line-height:1.02!important;
+    letter-spacing:.1px!important;
+  }
+  .hotspot-copy p{
+    width:220px!important;
+    font-size:12px!important;
+    line-height:1.35!important;
+  }
+  .hotspot-footer{
+    left:42px!important;
+    right:38px!important;
+    bottom:34px!important;
+  }
+  .see-map-btn{font-size:11px!important;gap:10px!important}
+  .see-map-thumb{width:58px!important;height:58px!important}
+  .hotspot-book-btn{
+    min-width:150px!important;
+    padding:12px 16px!important;
+    font-size:11px!important;
+    gap:22px!important;
+  }
+
+  /* RIGHT BOOKING */
+  .section4-booking-card{
+    height:740px!important;
+    min-height:740px!important;
+    padding:16px 32px 16px!important;
+    border-radius:2px!important;
+    box-shadow:0 16px 38px rgba(0,0,0,.10)!important;
+  }
+  .section4-booking-card:before{height:4px!important}
+  .section4-location-head{
+    height:184px!important;
+    min-height:184px!important;
+    grid-template-columns:minmax(0,1fr) 278px!important;
+    grid-template-rows:82px 1fr!important;
+    column-gap:22px!important;
+    padding:2px 0 8px!important;
+  }
+  .section4-address{font-size:10px!important;line-height:1.32!important;padding-top:8px!important}
+  .section4-direction{font-size:10px!important;padding:9px 15px!important;margin-top:3px!important}
+  .section4-map{width:278px!important;height:166px!important}
+
+  .section4-booking-card .booking-card-head{
+    height:67px!important;
+    padding:11px 0 6px!important;
+  }
+  .section4-booking-card .booking-card-head span{font-size:9px!important;letter-spacing:2.7px!important}
+  .section4-booking-card .booking-card-head h2{font-size:28px!important;line-height:1.02!important;margin:4px 0!important}
+  .section4-booking-card .booking-card-head p{font-size:10px!important;line-height:1.15!important}
+
+  /* STEP 01 */
+  .section4-booking-card .book-step.wide{
+    height:128px!important;
+    min-height:128px!important;
+    margin-top:8px!important;
+    padding:25px 12px 8px!important;
+  }
+  .section4-booking-card .step-no{
+    top:-17px!important;
+    left:18px!important;
+    font-size:31px!important;
+    letter-spacing:-.5px!important;
+  }
+  .section4-booking-card .step-content h3{font-size:17px!important;margin-bottom:8px!important}
+  .section4-booking-card .date-buttons{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    justify-content:center!important;
+    align-items:center!important;
+    gap:9px!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .date-btn{
+    flex:0 0 72px!important;
+    width:72px!important;
+    min-width:72px!important;
+    height:72px!important;
+    min-height:72px!important;
+    border-radius:2px!important;
+    padding:5px 2px!important;
+    border:2px solid #e41e2b!important;
+    outline:1px solid #e41e2b!important;
+    outline-offset:-5px!important;
+    background:#fff!important;
+  }
+  .section4-booking-card .date-btn span{font-size:9px!important}
+  .section4-booking-card .date-btn strong{font-size:25px!important;margin:3px 0!important}
+  .section4-booking-card .date-btn small{font-size:8px!important}
+  .section4-booking-card .date-btn:hover{background:#fff7f7!important;transform:translateY(-1px)!important}
+  .section4-booking-card .date-btn.selected{background:#fff!important;box-shadow:inset 0 0 0 2px #e41e2b!important}
+
+  /* STEPS 02 + 03 */
+  .section4-booking-card .book-bottom-grid{
+    height:188px!important;
+    min-height:188px!important;
+    margin-top:12px!important;
+    gap:12px!important;
+  }
+  .section4-booking-card .book-bottom-grid .book-step{
+    height:188px!important;
+    min-height:188px!important;
+    margin-top:0!important;
+    padding:26px 12px 10px!important;
+    border-radius:2px!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .book-bottom-grid .step-content h3{
+    font-size:16px!important;
+    margin-bottom:10px!important;
+  }
+
+  /* Readable two-line slot pills. Only presentation changes; data-slot remains the real slot ID. */
+  .section4-booking-card .slot-pills{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    grid-auto-rows:42px!important;
+    gap:7px!important;
+    min-height:91px!important;
+    max-height:91px!important;
+    align-content:start!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .slot-btn{
+    width:100%!important;
+    height:42px!important;
+    min-height:42px!important;
+    padding:4px 3px!important;
+    border-radius:999px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:3px!important;
+    font-size:7px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .slot-btn .slot-start,
+  .section4-booking-card .slot-btn .slot-end{display:inline-block!important}
+  .section4-booking-card .slot-btn .slot-arrow{font-size:8px!important;opacity:.55!important}
+  .section4-booking-card .slot-btn.selected{background:#fff0f1!important;border-color:var(--coke)!important;box-shadow:inset 0 0 0 1px var(--coke)!important}
+  .section4-booking-card .slot-empty{font-size:9px!important;grid-column:1/-1!important;text-align:center!important;align-self:center!important}
+
+  /* Seats: 5 × 3, with generous hit targets and no inner scrollbar. */
+  .section4-booking-card .mini-seat-grid{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    grid-template-rows:repeat(3,29px)!important;
+    gap:7px!important;
+    width:100%!important;
+    height:101px!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .section4-booking-card .mini-seat{
+    width:100%!important;
+    height:29px!important;
+    min-height:29px!important;
+    border-radius:2px!important;
+    font-size:9px!important;
+  }
+  .section4-booking-card .seat-step-design4 .seat-info{
+    font-size:8px!important;
+    line-height:1.1!important;
+    margin:5px 0 0!important;
+    min-height:10px!important;
+    white-space:nowrap!important;
+  }
+
+  /* Empty state before a slot is chosen. */
+  .section4-booking-card #seatGrid:empty + .seat-info{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:101px!important;
+    margin:0!important;
+    padding:0 14px!important;
+    border:1px dashed #e2c3c5!important;
+    background:#fffafa!important;
+    border-radius:3px!important;
+    white-space:normal!important;
+    text-align:center!important;
+    font-size:9px!important;
+    line-height:1.3!important;
+  }
+
+  .section4-booking-card .booking-note{
+    height:31px!important;
+    min-height:31px!important;
+    margin-top:10px!important;
+    padding:8px 4px 4px!important;
+    font-size:8px!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .confirm-btn{
+    height:38px!important;
+    min-height:38px!important;
+    margin:8px auto 0!important;
+    padding:8px 22px!important;
+    border-radius:999px!important;
+    font-size:10px!important;
+  }
+}
+
+@media (max-width:1000px){
+  .design-s4{padding:42px 0 54px!important;background:#fff!important}
+  .section4-shell{width:min(94%,760px)!important;gap:22px!important}
+  .section4-hotspot{height:520px!important;min-height:520px!important;border-radius:2px!important}
+  .kolkata-map-art{width:68%!important;height:100%!important;right:0!important;top:0!important}
+  .kolkata-map-art img{width:100%!important;height:100%!important;object-fit:cover!important}
+  .section4-booking-card{height:auto!important;min-height:0!important;border-radius:2px!important;padding:16px 20px 20px!important}
+  .section4-booking-card .slot-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-rows:42px!important;max-height:none!important;height:auto!important}
+  .section4-booking-card .mini-seat-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-template-rows:repeat(3,30px)!important;height:auto!important}
+  .section4-booking-card .slot-btn{height:42px!important;min-height:42px!important}
+}
+
+@media (max-width:560px){
+  .design-s4{padding:28px 0 38px!important}
+  .section4-shell{width:100%!important;padding:0 12px!important;gap:16px!important}
+  .section4-hotspot{height:330px!important;min-height:330px!important}
+  .hotspot-copy{left:20px!important;top:20px!important;width:150px!important}
+  .hotspot-copy h2{margin-top:96px!important;font-size:17px!important}
+  .hotspot-copy p{width:130px!important;font-size:9px!important}
+  .hotspot-footer{left:20px!important;right:20px!important;bottom:24px!important}
+  .see-map-thumb{width:44px!important;height:44px!important}
+  .hotspot-book-btn{min-width:118px!important;padding:9px 11px!important;font-size:9px!important;gap:12px!important}
+  .section4-booking-card{padding:14px 14px 17px!important}
+  .section4-location-head{grid-template-columns:1fr 145px!important;grid-template-rows:90px 1fr!important;min-height:180px!important}
+  .section4-map{height:164px!important}
+  .section4-booking-card .date-buttons{overflow-x:auto;justify-content:flex-start!important}
+  .section4-booking-card .book-bottom-grid{grid-template-columns:1fr 1fr!important}
+  .section4-booking-card .book-bottom-grid .book-step{min-height:170px!important;height:170px!important;padding:24px 8px 8px!important}
+  .section4-booking-card .slot-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:5px!important}
+  .section4-booking-card .slot-btn{font-size:6.5px!important}
+}
+
+
+/* ==========================================================
+   V53 — Section 4 booking layout rebuild
+   Visual/presentation only. Booking PHP, form fields, slot IDs,
+   seat IDs and availability logic remain unchanged.
+   ========================================================== */
+@media (min-width:1001px){
+  .design-s4{
+    min-height:0!important;
+    height:auto!important;
+    padding:58px 0 72px!important;
+    background:#fff!important;
+    display:block!important;
+    scroll-margin-top:82px;
+  }
+  .section4-shell{
+    width:min(1250px,calc(100% - 48px))!important;
+    height:780px!important;
+    margin:0 auto!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:30px!important;
+    align-items:stretch!important;
+  }
+
+  /* LOCATION PANEL */
+  .section4-hotspot{
+    width:100%!important;
+    height:780px!important;
+    min-height:780px!important;
+    margin:0!important;
+    border:1px solid #171717!important;
+    border-radius:4px!important;
+    box-shadow:0 18px 45px rgba(0,0,0,.10)!important;
+    overflow:hidden!important;
+  }
+  .section4-hotspot:after{width:60%!important}
+  .kolkata-map-art{width:100%!important;height:780px!important;right:0!important;top:0!important}
+  .kolkata-map-art img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+  .hotspot-copy{left:42px!important;top:42px!important;width:285px!important}
+  .hotspot-copy .plan-label{font-size:12px!important;letter-spacing:1.8px!important}
+  .hotspot-copy h2{margin:170px 0 15px!important;font-size:29px!important;line-height:1.02!important}
+  .hotspot-copy p{width:230px!important;font-size:12px!important;line-height:1.35!important}
+  .hotspot-footer{left:42px!important;right:40px!important;bottom:38px!important}
+  .see-map-btn{font-size:11px!important;gap:10px!important}
+  .see-map-thumb{width:60px!important;height:60px!important}
+  .hotspot-book-btn{min-width:158px!important;padding:12px 17px!important;font-size:11px!important;gap:22px!important}
+
+  /* BOOKING PANEL — stacked steps for clarity rather than the cramped 02/03 split */
+  .section4-booking-card{
+    width:100%!important;
+    height:780px!important;
+    min-height:780px!important;
+    padding:17px 30px 17px!important;
+    border:1px solid #1b1b1b!important;
+    border-radius:4px!important;
+    box-shadow:0 18px 45px rgba(0,0,0,.10)!important;
+    overflow:hidden!important;
+    position:relative!important;
+  }
+  .section4-booking-card:before{height:4px!important}
+
+  .section4-location-head{
+    height:166px!important;
+    min-height:166px!important;
+    grid-template-columns:minmax(0,1fr) 285px!important;
+    grid-template-rows:78px 1fr!important;
+    column-gap:22px!important;
+    padding:2px 0 9px!important;
+  }
+  .section4-address{font-size:10px!important;line-height:1.32!important;max-width:100%!important;padding-top:7px!important}
+  .section4-direction{font-size:10px!important;padding:9px 15px!important;margin-top:3px!important}
+  .section4-map{width:285px!important;height:151px!important}
+
+  .section4-booking-card .booking-card-head{
+    height:59px!important;
+    padding:10px 0 5px!important;
+  }
+  .section4-booking-card .booking-card-head span{font-size:9px!important;letter-spacing:2.7px!important}
+  .section4-booking-card .booking-card-head h2{font-size:27px!important;line-height:1.02!important;margin:3px 0 3px!important}
+  .section4-booking-card .booking-card-head p{font-size:9.5px!important;line-height:1.1!important}
+
+  .section4-booking-card form{display:block!important}
+  .section4-booking-card .book-step{border-color:#d9aeb3!important;background:#fff!important}
+  .section4-booking-card .book-step.wide{
+    height:112px!important;min-height:112px!important;margin:8px 0 0!important;padding:23px 12px 8px!important;
+  }
+  .section4-booking-card .step-no{top:-16px!important;left:17px!important;font-size:29px!important;padding:0 7px!important}
+  .section4-booking-card .step-content h3{font-size:16px!important;line-height:1!important;margin:0 0 8px!important}
+  .section4-booking-card .date-buttons{display:flex!important;flex-wrap:nowrap!important;justify-content:center!important;gap:8px!important;overflow:hidden!important}
+  .section4-booking-card .date-btn{flex:0 0 72px!important;width:72px!important;height:67px!important;min-height:67px!important;padding:4px 2px!important;border:2px solid #e41e2b!important;outline:1px solid #e41e2b!important;outline-offset:-5px!important;border-radius:2px!important}
+  .section4-booking-card .date-btn span{font-size:8px!important}
+  .section4-booking-card .date-btn strong{font-size:24px!important;margin:3px 0!important}
+  .section4-booking-card .date-btn small{font-size:8px!important}
+
+  .section4-booking-card .book-bottom-grid{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:9px 0 0!important;
+    gap:9px!important;
+  }
+  .section4-booking-card .book-bottom-grid .book-step{
+    width:100%!important;
+    height:142px!important;
+    min-height:142px!important;
+    margin:0!important;
+    padding:23px 12px 8px!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .book-bottom-grid .step-content h3{font-size:15px!important;line-height:1!important;margin-bottom:8px!important}
+
+  /* 02 — six readable pills per row, no touching/overlap */
+  .section4-booking-card .slot-pills{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    grid-auto-rows:39px!important;
+    gap:6px!important;
+    min-height:84px!important;
+    max-height:84px!important;
+    overflow:hidden!important;
+    align-content:start!important;
+  }
+  .section4-booking-card .slot-btn{
+    width:100%!important;height:39px!important;min-height:39px!important;padding:3px 6px!important;
+    display:flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;
+    border-radius:999px!important;font-size:8px!important;line-height:1!important;white-space:nowrap!important;overflow:hidden!important;
+  }
+  .section4-booking-card .slot-btn .slot-start,.section4-booking-card .slot-btn .slot-end{display:inline-block!important}
+  .section4-booking-card .slot-btn .slot-arrow{font-size:9px!important;opacity:.55!important}
+  .section4-booking-card .slot-empty{font-size:9px!important;grid-column:1/-1!important;text-align:center!important;align-self:center!important}
+
+  /* 03 — full 5 × 3 seat grid, no inner scrolling */
+  .section4-booking-card .book-bottom-grid .seat-step-design4{height:155px!important;min-height:155px!important}
+  .section4-booking-card .mini-seat-grid{
+    display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-template-rows:repeat(3,25px)!important;
+    gap:6px!important;width:100%!important;height:87px!important;max-height:none!important;overflow:visible!important;
+  }
+  .section4-booking-card .mini-seat{width:100%!important;height:25px!important;min-height:25px!important;border-radius:2px!important;font-size:8px!important}
+  .section4-booking-card .seat-step-design4 .seat-info{font-size:8px!important;line-height:1.1!important;margin:4px 0 0!important;min-height:9px!important;white-space:nowrap!important}
+  .section4-booking-card #seatGrid:empty + .seat-info{
+    display:flex!important;align-items:center!important;justify-content:center!important;min-height:87px!important;margin:0!important;padding:0 18px!important;
+    border:1px dashed #e2c3c5!important;background:#fffafa!important;border-radius:3px!important;white-space:normal!important;text-align:center!important;font-size:9px!important;line-height:1.3!important;
+  }
+
+  .section4-booking-card .booking-note{height:25px!important;min-height:25px!important;margin:8px 0 0!important;padding:5px 4px 3px!important;font-size:8px!important;overflow:hidden!important}
+  .section4-booking-card .confirm-btn{height:36px!important;min-height:36px!important;margin:7px auto 0!important;padding:8px 24px!important;border-radius:999px!important;font-size:10px!important}
+}
+
+@media (max-width:1000px){
+  .design-s4{padding:42px 0 54px!important;background:#fff!important}
+  .section4-shell{width:min(94%,760px)!important;grid-template-columns:1fr!important;gap:22px!important;height:auto!important}
+  .section4-hotspot{height:520px!important;min-height:520px!important;margin:0!important}
+  .section4-booking-card{height:auto!important;min-height:0!important;padding:16px 20px 20px!important;overflow:visible!important}
+  .section4-booking-card .book-bottom-grid{grid-template-columns:1fr 1fr!important;gap:12px!important}
+  .section4-booking-card .book-bottom-grid .book-step{height:188px!important;min-height:188px!important}
+  .section4-booking-card .book-bottom-grid .seat-step-design4{height:188px!important;min-height:188px!important}
+  .section4-booking-card .slot-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-height:none!important;height:auto!important}
+  .section4-booking-card .mini-seat-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-template-rows:repeat(3,28px)!important;height:auto!important}
+}
+@media (max-width:560px){
+  .design-s4{padding:28px 0 40px!important}
+  .section4-shell{width:100%!important;padding:0 12px!important;gap:16px!important}
+  .section4-hotspot{height:330px!important;min-height:330px!important}
+  .hotspot-copy{left:20px!important;top:20px!important;width:150px!important}
+  .hotspot-copy h2{margin-top:96px!important;font-size:17px!important}
+  .hotspot-copy p{width:130px!important;font-size:9px!important}
+  .hotspot-footer{left:20px!important;right:20px!important;bottom:24px!important}
+  .see-map-thumb{width:44px!important;height:44px!important}
+  .hotspot-book-btn{min-width:118px!important;padding:9px 11px!important;font-size:9px!important;gap:12px!important}
+  .section4-booking-card{padding:14px 14px 17px!important}
+  .section4-location-head{grid-template-columns:1fr 145px!important;grid-template-rows:90px 1fr!important;min-height:180px!important;height:180px!important}
+  .section4-map{height:164px!important}
+  .section4-booking-card .date-buttons{overflow-x:auto;justify-content:flex-start!important}
+  .section4-booking-card .book-bottom-grid{grid-template-columns:1fr!important;gap:10px!important}
+  .section4-booking-card .book-bottom-grid .book-step,.section4-booking-card .book-bottom-grid .seat-step-design4{height:auto!important;min-height:170px!important}
+  .section4-booking-card .slot-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:5px!important;max-height:none!important}
+  .section4-booking-card .slot-btn{font-size:6.5px!important}
+}
+
+/* ==========================================================
+   V54 — Design 4 booking composition rebuild
+   The booking DOM keeps all original IDs, form fields, slot IDs,
+   seat IDs and JS behavior. Only the visual grouping/position changes.
+   ========================================================== */
+@media (min-width:1001px){
+  .design-s4{
+    padding:58px 0 72px!important;
+    background:#fff!important;
+  }
+  .section4-shell{
+    width:min(1250px,calc(100% - 48px))!important;
+    height:820px!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:30px!important;
+    align-items:stretch!important;
+  }
+  .section4-hotspot,
+  .section4-booking-card{
+    height:820px!important;
+    min-height:820px!important;
+  }
+  .section4-hotspot{
+    border-radius:0!important;
+  }
+  .section4-booking-card{
+    position:relative!important;
+    padding:14px 30px 18px!important;
+    border-radius:0!important;
+    overflow:hidden!important;
+  }
+
+  /* Location/map area at the top — same horizontal composition as Design 4. */
+  .section4-location-head{
+    height:178px!important;
+    min-height:178px!important;
+    grid-template-columns:minmax(0,1fr) 285px!important;
+    grid-template-rows:78px 1fr!important;
+    column-gap:22px!important;
+    padding:2px 0 8px!important;
+  }
+  .section4-map{
+    width:285px!important;
+    height:155px!important;
+  }
+
+  .section4-booking-card .booking-card-head{
+    height:62px!important;
+    padding:10px 0 7px!important;
+  }
+  .section4-booking-card .booking-card-head span{
+    font-size:9px!important;
+    letter-spacing:2.7px!important;
+  }
+  .section4-booking-card .booking-card-head h2{
+    font-size:28px!important;
+    line-height:1!important;
+    margin:4px 0 4px!important;
+  }
+  .section4-booking-card .booking-card-head p{
+    font-size:9px!important;
+  }
+
+  /* Every booking step is now a full-width row, exactly like the reference. */
+  .section4-booking-card form{
+    display:block!important;
+  }
+  .section4-booking-card .book-step.wide,
+  .section4-booking-card .slot-step-full,
+  .section4-booking-card .seat-step-full{
+    width:100%!important;
+    box-sizing:border-box!important;
+    border:1px solid #ddb7ba!important;
+    background:#fff!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+
+  .section4-booking-card .book-step.wide{
+    height:112px!important;
+    min-height:112px!important;
+    margin-top:8px!important;
+    padding:24px 14px 8px!important;
+  }
+  .section4-booking-card .slot-step-full{
+    height:145px!important;
+    min-height:145px!important;
+    margin-top:10px!important;
+    padding:25px 14px 9px!important;
+  }
+  .section4-booking-card .seat-step-full{
+    height:160px!important;
+    min-height:160px!important;
+    margin-top:10px!important;
+    padding:25px 14px 9px!important;
+  }
+
+  .section4-booking-card .step-no{
+    top:-16px!important;
+    left:17px!important;
+    font-size:30px!important;
+    padding:0 8px!important;
+    background:#fff!important;
+  }
+  .section4-booking-card .step-content h3{
+    font-size:17px!important;
+    line-height:1!important;
+    margin:0 0 9px!important;
+  }
+
+  /* Date row — centered when only one configured date exists. */
+  .section4-booking-card .date-buttons{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    justify-content:center!important;
+    align-items:center!important;
+    gap:10px!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .date-btn{
+    flex:0 0 72px!important;
+    width:72px!important;
+    min-width:72px!important;
+    height:68px!important;
+    min-height:68px!important;
+    padding:4px 2px!important;
+    border:2px solid #e41e2b!important;
+    outline:1px solid #e41e2b!important;
+    outline-offset:-5px!important;
+    border-radius:0!important;
+  }
+  .section4-booking-card .date-btn span{font-size:8px!important}
+  .section4-booking-card .date-btn strong{font-size:25px!important;margin:3px 0!important}
+  .section4-booking-card .date-btn small{font-size:8px!important}
+
+  /* Six configured slots fit as 3 columns × 2 rows; ten fit as 5 × 2. */
+  .section4-booking-card .slot-pills{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    grid-template-rows:repeat(2,39px)!important;
+    grid-auto-rows:39px!important;
+    gap:6px!important;
+    width:100%!important;
+    height:84px!important;
+    min-height:84px!important;
+    max-height:84px!important;
+    overflow:hidden!important;
+    align-content:start!important;
+  }
+  .section4-booking-card .slot-btn{
+    width:100%!important;
+    height:39px!important;
+    min-height:39px!important;
+    padding:3px 6px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:5px!important;
+    border-radius:999px!important;
+    font-size:8px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card .slot-btn .slot-start,
+  .section4-booking-card .slot-btn .slot-end{display:inline-block!important}
+  .section4-booking-card .slot-btn .slot-arrow{font-size:9px!important;opacity:.55!important}
+  .section4-booking-card .slot-empty{
+    grid-column:1/-1!important;
+    align-self:center!important;
+    text-align:center!important;
+    font-size:9px!important;
+  }
+
+  /* All 15 seats remain visible as a 5 × 3 grid. */
+  .section4-booking-card .mini-seat-grid{
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    grid-template-rows:repeat(3,25px)!important;
+    grid-auto-rows:25px!important;
+    gap:6px!important;
+    width:100%!important;
+    height:87px!important;
+    max-height:none!important;
+    overflow:visible!important;
+    padding:0!important;
+  }
+  .section4-booking-card .mini-seat{
+    width:100%!important;
+    height:25px!important;
+    min-height:25px!important;
+    border-radius:0!important;
+    font-size:8px!important;
+  }
+  .section4-booking-card .seat-step-design4 .seat-info{
+    font-size:8px!important;
+    line-height:1.1!important;
+    margin:4px 0 0!important;
+    min-height:9px!important;
+    white-space:nowrap!important;
+    text-align:center!important;
+  }
+  .section4-booking-card #seatGrid:empty + .seat-info{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    height:87px!important;
+    min-height:87px!important;
+    margin:0!important;
+    padding:0 18px!important;
+    border:1px dashed #e2c3c5!important;
+    background:#fffafa!important;
+    border-radius:2px!important;
+    white-space:normal!important;
+    text-align:center!important;
+    font-size:9px!important;
+    line-height:1.3!important;
+  }
+
+  .section4-booking-card .booking-note{
+    height:25px!important;
+    min-height:25px!important;
+    margin:8px 0 0!important;
+    padding:5px 4px 3px!important;
+    font-size:8px!important;
+    overflow:hidden!important;
+    text-align:center!important;
+  }
+  .section4-booking-card .confirm-btn{
+    display:block!important;
+    height:38px!important;
+    min-height:38px!important;
+    margin:8px auto 0!important;
+    padding:8px 25px!important;
+    border-radius:999px!important;
+    font-size:10px!important;
+  }
+}
+
+@media (max-width:1000px){
+  .design-s4{padding:40px 0 52px!important}
+  .section4-shell{height:auto!important;grid-template-columns:1fr!important;gap:20px!important}
+  .section4-hotspot{height:520px!important;min-height:520px!important}
+  .section4-booking-card{height:auto!important;min-height:0!important;overflow:visible!important;padding:16px 20px 20px!important}
+  .section4-booking-card .book-bottom-grid{display:block!important;height:0!important;margin:0!important}
+  .section4-booking-card .slot-step-full{height:auto!important;min-height:150px!important;margin-top:10px!important}
+  .section4-booking-card .seat-step-full{height:auto!important;min-height:175px!important;margin-top:10px!important}
+  .section4-booking-card .slot-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;max-height:none!important;height:auto!important}
+  .section4-booking-card .mini-seat-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important;grid-template-rows:repeat(3,28px)!important;height:auto!important}
+}
+
+/* ==========================================================
+   V56 — FINAL SEAT GRID FIX
+   15-seat presentation: 5 columns × 3 rows.
+   Keep booking IDs/JS behavior unchanged; presentation only.
+   ========================================================== */
+.section4-booking-card .mini-seat-grid{
+  display:grid !important;
+  grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+  grid-template-rows:repeat(3,25px) !important;
+  grid-auto-rows:25px !important;
+  gap:6px !important;
+  width:100% !important;
+  height:95px !important;
+  min-height:95px !important;
+  max-height:none !important;
+  overflow:visible !important;
+  padding:0 !important;
+  margin:0 !important;
+  align-content:start !important;
+  box-sizing:border-box !important;
+}
+
+.section4-booking-card .mini-seat{
+  width:100% !important;
+  height:25px !important;
+  min-height:25px !important;
+  max-height:25px !important;
+  border-radius:0 !important;
+  font-size:12px !important;
+  line-height:25px !important;
+  padding:0 !important;
+  margin:0 !important;
+  box-sizing:border-box !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+/* Keep the seat area inside the Step 03 box and prevent later responsive
+   rules from collapsing or scrolling the 5 × 3 grid. */
+.section4-booking-card .seat-step-full .step-content{
+  width:100% !important;
+  min-width:0 !important;
+  overflow:visible !important;
+}
+
+.section4-booking-card .seat-step-full .seat-info{
+  margin:5px 0 0 !important;
+  min-height:12px !important;
+  line-height:1.2 !important;
+  text-align:center !important;
+}
+
+@media (max-width:1000px){
+  .section4-booking-card .mini-seat-grid{
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+    grid-template-rows:repeat(3,25px) !important;
+    grid-auto-rows:25px !important;
+    gap:6px !important;
+    width:100% !important;
+    height:95px !important;
+    min-height:95px !important;
+    max-height:none !important;
+    overflow:visible !important;
+    padding:0 !important;
+    margin:0 !important;
+  }
+  .section4-booking-card .mini-seat{
+    width:100% !important;
+    height:25px !important;
+    min-height:25px !important;
+    max-height:25px !important;
+    font-size:12px !important;
+    line-height:25px !important;
+  }
+}
+
+@media (max-width:560px){
+  .section4-booking-card .mini-seat-grid{
+    grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+    grid-template-rows:repeat(3,25px) !important;
+    grid-auto-rows:25px !important;
+    height:95px !important;
+    min-height:95px !important;
+  }
+  .section4-booking-card .mini-seat{
+    height:25px !important;
+    min-height:25px !important;
+    max-height:25px !important;
+    font-size:11px !important;
+  }
+}
+
+/* V57 — Fix Section 4 step-number visibility.
+   Keep 01 / 02 / 03 fully visible above each fieldset border.
+   Presentation-only; booking behavior is unchanged. */
+.section4-booking-card .book-step,
+.section4-booking-card .book-step.wide,
+.section4-booking-card .slot-step-full,
+.section4-booking-card .seat-step-full,
+.section4-booking-card .seat-step-design4{
+  position:relative!important;
+  overflow:visible!important;
+}
+.section4-booking-card .step-no{
+  position:absolute!important;
+  top:-18px!important;
+  left:18px!important;
+  z-index:20!important;
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  height:auto!important;
+  min-height:0!important;
+  line-height:1!important;
+  background:#fff!important;
+  color:#e41e2b!important;
+  padding:0 8px!important;
+  margin:0!important;
+  font-size:34px!important;
+  font-weight:900!important;
+  white-space:nowrap!important;
+}
+.section4-booking-card .step-content{
+  position:relative!important;
+  z-index:1!important;
+}
+.section4-booking-card .seat-step-design4 .step-no{
+  top:-18px!important;
+  z-index:30!important;
+}
+@media(max-width:1000px){
+  .section4-booking-card .step-no{
+    top:-17px!important;
+    left:18px!important;
+    font-size:31px!important;
+    padding:0 8px!important;
+  }
+}
+@media(max-width:560px){
+  .section4-booking-card .step-no{
+    top:-16px!important;
+    left:14px!important;
+    font-size:29px!important;
+    padding:0 7px!important;
+  }
+}
+
+
+/* ==========================================================
+   V58 — DATE VISIBILITY / RENDERING FIX
+   Every valid configured date must render its weekday, day and
+   month before any date is selected. Invalid/empty DB date values
+   are ignored so they cannot create blank date cards.
+   ========================================================== */
+.section4-booking-card .date-buttons{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:center !important;
+  align-content:center !important;
+  gap:10px !important;
+  width:100% !important;
+  min-height:72px !important;
+  height:auto !important;
+  overflow:visible !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+.section4-booking-card .date-btn{
+  display:flex !important;
+  flex:0 0 72px !important;
+  width:72px !important;
+  min-width:72px !important;
+  height:68px !important;
+  min-height:68px !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:#e41e2b !important;
+  background:#fff !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-direction:column !important;
+  box-sizing:border-box !important;
+}
+.section4-booking-card .date-btn span,
+.section4-booking-card .date-btn strong,
+.section4-booking-card .date-btn small{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:#e41e2b !important;
+  position:static !important;
+  transform:none !important;
+}
+.section4-booking-card .date-btn span{font-size:9px !important; line-height:1 !important; min-height:9px !important;}
+.section4-booking-card .date-btn strong{font-size:27px !important; line-height:1 !important; margin:4px 0 !important;}
+.section4-booking-card .date-btn small{font-size:9px !important; line-height:1 !important;}
+.section4-booking-card .date-btn:empty{display:none !important;}
+.section4-booking-card .date-buttons .no-slots{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:100% !important;
+  min-height:68px !important;
+}
+@media(max-width:560px){
+  .section4-booking-card .date-buttons{
+    flex-wrap:wrap !important;
+    overflow:visible !important;
+    gap:7px !important;
+  }
+  .section4-booking-card .date-btn{
+    flex-basis:68px !important;
+    width:68px !important;
+    min-width:68px !important;
+    height:66px !important;
+    min-height:66px !important;
+  }
+  .section4-booking-card .date-btn strong{font-size:24px !important;}
+}
+
+
+/* ==========================================================
+   V59 — LOAD THE ACTUAL V59 STYLESHEET + DATE CARD VISIBILITY
+   Presentation-only. Booking logic/data/IDs are unchanged.
+   ========================================================== */
+.section4-booking-card .date-buttons{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:center !important;
+  align-content:center !important;
+  gap:10px !important;
+  width:100% !important;
+  min-height:78px !important;
+  height:auto !important;
+  overflow:visible !important;
+  visibility:visible !important;
+  opacity:1 !important;
+}
+.section4-booking-card .date-btn{
+  display:flex !important;
+  flex:0 0 72px !important;
+  width:72px !important;
+  min-width:72px !important;
+  height:76px !important;
+  min-height:76px !important;
+  box-sizing:border-box !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:#e41e2b !important;
+  background:#fff !important;
+  align-items:center !important;
+  justify-content:center !important;
+  flex-direction:column !important;
+  user-select:none !important;
+  -webkit-user-select:none !important;
+  -webkit-tap-highlight-color:transparent !important;
+}
+.section4-booking-card .date-btn span,
+.section4-booking-card .date-btn strong,
+.section4-booking-card .date-btn small{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:inherit !important;
+  position:static !important;
+  transform:none !important;
+  user-select:none !important;
+  -webkit-user-select:none !important;
+}
+.section4-booking-card .date-btn span{font-size:9px !important;line-height:1 !important;min-height:9px !important;}
+.section4-booking-card .date-btn strong{font-size:27px !important;line-height:1 !important;margin:4px 0 !important;}
+.section4-booking-card .date-btn small{font-size:9px !important;line-height:1 !important;}
+.section4-booking-card .date-btn.selected{
+  color:#e41e2b !important;
+  background:#fff7f7 !important;
+  border-color:#e41e2b !important;
+  box-shadow:inset 0 0 0 2px #e41e2b !important;
+}
+.section4-booking-card .date-buttons .no-slots{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:100% !important;
+  min-height:68px !important;
+}
+@media(max-width:560px){
+  .section4-booking-card .date-buttons{flex-wrap:wrap !important;overflow:visible !important;gap:7px !important;}
+  .section4-booking-card .date-btn{flex-basis:68px !important;width:68px !important;min-width:68px !important;height:66px !important;min-height:66px !important;}
+  .section4-booking-card .date-btn strong{font-size:24px !important;}
+}
+
+
+/* V60 — supplied-reference typography/content styling. Visual presentation only. */
+.section4-booking-card .booking-card-head{ text-align:center!important; padding:18px 0 14px!important; }
+.section4-booking-card .booking-card-head span{ font-family:TCCC,Arial,sans-serif!important; font-size:10px!important; letter-spacing:3px!important; font-weight:900!important; color:#e41e2b!important; }
+.section4-booking-card .booking-card-head h2{ font-family:Georgia,"Times New Roman",serif!important; font-size:34px!important; line-height:1.08!important; font-weight:700!important; color:#d9272e!important; margin:5px 0 6px!important; }
+.section4-booking-card .booking-card-head p{ font-family:TCCC,Arial,sans-serif!important; font-size:14px!important; line-height:1.35!important; font-weight:500!important; color:#333!important; margin:0!important; }
+.section4-booking-card .book-step .step-no{ font-family:Georgia,"Times New Roman",serif!important; font-size:46px!important; line-height:.95!important; font-weight:700!important; color:#d9272e!important; background:#fff!important; padding:0 9px!important; top:-21px!important; left:27px!important; z-index:30!important; }
+.section4-booking-card .book-step .step-content h3{ font-family:Georgia,"Times New Roman",serif!important; font-size:28px!important; line-height:1.05!important; font-weight:700!important; color:#d9272e!important; margin:0 0 16px!important; }
+.section4-booking-card .book-step .step-content h3 small{ font-family:TCCC,Arial,sans-serif!important; font-size:10px!important; font-weight:500!important; color:#666!important; vertical-align:middle!important; }
+.section4-booking-card .date-btn{ font-family:TCCC,Arial,sans-serif!important; min-height:94px!important; border:2px solid #e41e2b!important; background:#fff!important; box-shadow:inset 0 0 0 3px #fff, inset 0 0 0 5px #f2a5aa!important; }
+.section4-booking-card .date-btn span{ font-family:TCCC,Arial,sans-serif!important; font-size:12px!important; font-weight:800!important; }
+.section4-booking-card .date-btn strong{ font-family:TCCC,Arial,sans-serif!important; font-size:34px!important; line-height:1!important; font-weight:900!important; margin:4px 0!important; }
+.section4-booking-card .date-btn small{ font-family:TCCC,Arial,sans-serif!important; font-size:11px!important; font-weight:800!important; }
+.section4-booking-card .date-btn.selected{ color:#e41e2b!important; background:#fff!important; box-shadow:inset 0 0 0 3px #fff, inset 0 0 0 5px #e41e2b!important; }
+.section4-booking-card .slot-btn,.section4-booking-card .mini-seat{ font-family:TCCC,Arial,sans-serif!important; }
+@media(max-width:900px){ .section4-booking-card .booking-card-head h2{font-size:31px!important}.section4-booking-card .book-step .step-no{font-size:42px!important}.section4-booking-card .book-step .step-content h3{font-size:25px!important} }
+@media(max-width:560px){ .section4-booking-card .booking-card-head h2{font-size:28px!important}.section4-booking-card .booking-card-head p{font-size:12px!important}.section4-booking-card .book-step .step-no{font-size:38px!important;left:17px!important;top:-18px!important}.section4-booking-card .book-step .step-content h3{font-size:23px!important}.section4-booking-card .date-btn{min-height:82px!important}.section4-booking-card .date-btn strong{font-size:28px!important} }
+
+/* V62 — restore V60 layout and apply safe TCCC typography without changing layout/booking logic. */
+.section4-booking-card .booking-card-head{
+  text-align:center!important;
+  padding:18px 0 18px!important;
+}
+.section4-booking-card .booking-card-head h2{
+  font-family:"TCCC",Arial,sans-serif!important;
+  font-size:31px!important;
+  line-height:1.05!important;
+  font-weight:900!important;
+  letter-spacing:.01em!important;
+  color:#d9272e!important;
+  margin:4px 0 5px!important;
+}
+.section4-booking-card .booking-card-head p{
+  display:block!important;
+  font-family:"TCCC",Arial,sans-serif!important;
+  font-size:12px!important;
+  line-height:1.2!important;
+  font-weight:500!important;
+  color:#333!important;
+  margin:0!important;
+}
+.section4-booking-card .book-step .step-no{
+  font-family:"TCCC",Arial,sans-serif!important;
+  font-size:42px!important;
+  line-height:.9!important;
+  font-weight:900!important;
+  color:#d9272e!important;
+  background:#fff!important;
+  padding:0 8px!important;
+  top:-18px!important;
+  left:24px!important;
+  z-index:30!important;
+}
+.section4-booking-card .book-step .step-content h3{
+  font-family:"TCCC",Arial,sans-serif!important;
+  font-size:19px!important;
+  line-height:1.1!important;
+  font-weight:900!important;
+  color:#d9272e!important;
+  margin:0 0 12px!important;
+}
+.section4-booking-card .book-step .step-content h3 small{
+  font-family:"TCCC",Arial,sans-serif!important;
+}
+.section4-booking-card .date-btn,
+.section4-booking-card .slot-btn,
+.section4-booking-card .mini-seat,
+.section4-booking-card .confirm-btn{
+  font-family:"TCCC",Arial,sans-serif!important;
+}
+.section4-booking-card .date-btn strong{font-weight:900!important}
+
+@media(max-width:900px){
+  .section4-booking-card .booking-card-head{padding:16px 0 16px!important}
+  .section4-booking-card .booking-card-head h2{font-size:28px!important}
+  .section4-booking-card .booking-card-head p{font-size:11px!important}
+  .section4-booking-card .book-step .step-no{font-size:39px!important;top:-17px!important;left:20px!important}
+  .section4-booking-card .book-step .step-content h3{font-size:18px!important}
+}
+@media(max-width:560px){
+  .section4-booking-card .booking-card-head{padding:14px 0 14px!important}
+  .section4-booking-card .booking-card-head h2{font-size:25px!important;line-height:1.05!important}
+  .section4-booking-card .booking-card-head p{font-size:10px!important}
+  .section4-booking-card .book-step .step-no{font-size:36px!important;top:-16px!important;left:16px!important}
+  .section4-booking-card .book-step .step-content h3{font-size:17px!important}
+}
+
+/* V63 — final Section 4 overlap correction. Layout-only; booking logic unchanged. */
+.section4-booking-card{
+  overflow:visible!important;
+  height:auto!important;
+  min-height:0!important;
+  box-sizing:border-box!important;
+}
+.section4-booking-card .booking-card-head{
+  height:auto!important;
+  min-height:0!important;
+  padding:18px 0 16px!important;
+  overflow:visible!important;
+}
+.section4-booking-card .booking-card-head h2{
+  position:relative!important;
+  display:block!important;
+  margin:5px 0 4px!important;
+  line-height:1.08!important;
+  overflow:visible!important;
+  z-index:2!important;
+}
+.section4-booking-card .booking-card-head p{
+  position:relative!important;
+  display:block!important;
+  margin:0!important;
+  line-height:1.25!important;
+  z-index:2!important;
+}
+.section4-booking-card form{
+  display:block!important;
+  position:relative!important;
+  overflow:visible!important;
+}
+.section4-booking-card .book-step{
+  position:relative!important;
+  display:block!important;
+  box-sizing:border-box!important;
+  height:auto!important;
+  min-height:0!important;
+  margin:18px 0 0!important;
+  padding:34px 18px 18px!important;
+  overflow:visible!important;
+}
+.section4-booking-card .book-step.wide{
+  min-height:176px!important;
+  height:auto!important;
+  padding-top:36px!important;
+}
+.section4-booking-card .slot-step-full{
+  min-height:158px!important;
+  height:auto!important;
+  padding-top:36px!important;
+}
+.section4-booking-card .seat-step-full{
+  min-height:184px!important;
+  height:auto!important;
+  padding-top:36px!important;
+}
+.section4-booking-card .step-no{
+  position:absolute!important;
+  top:-18px!important;
+  left:24px!important;
+  height:52px!important;
+  line-height:52px!important;
+  display:block!important;
+  padding:0 10px!important;
+  margin:0!important;
+  background:#fff!important;
+  z-index:50!important;
+  white-space:nowrap!important;
+}
+.section4-booking-card .step-content{
+  position:relative!important;
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  overflow:visible!important;
+}
+.section4-booking-card .step-content h3{
+  position:relative!important;
+  display:block!important;
+  margin:0 0 16px!important;
+  line-height:1.12!important;
+  min-height:0!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  z-index:3!important;
+}
+.section4-booking-card .date-buttons{
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(58px,70px))!important;
+  justify-content:center!important;
+  align-items:center!important;
+  gap:10px!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:94px!important;
+  overflow:visible!important;
+}
+.section4-booking-card .date-btn{
+  position:relative!important;
+  width:70px!important;
+  min-width:58px!important;
+  height:94px!important;
+  min-height:94px!important;
+  box-sizing:border-box!important;
+  overflow:visible!important;
+}
+.section4-booking-card .slot-pills{
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  grid-auto-rows:44px!important;
+  gap:7px!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:95px!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+.section4-booking-card .slot-btn{
+  width:100%!important;
+  height:44px!important;
+  min-height:44px!important;
+  box-sizing:border-box!important;
+  white-space:nowrap!important;
+}
+.section4-booking-card .mini-seat-grid{
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  grid-template-rows:repeat(3,25px)!important;
+  grid-auto-rows:25px!important;
+  gap:6px!important;
+  width:100%!important;
+  height:95px!important;
+  min-height:95px!important;
+  max-height:none!important;
+  overflow:visible!important;
+  padding:0!important;
+}
+.section4-booking-card .mini-seat{
+  width:100%!important;
+  height:25px!important;
+  min-height:25px!important;
+  box-sizing:border-box!important;
+}
+.section4-booking-card .booking-note{
+  height:auto!important;
+  min-height:32px!important;
+  padding:9px 4px!important;
+  box-sizing:border-box!important;
+  overflow:visible!important;
+}
+.section4-booking-card .confirm-btn{
+  height:auto!important;
+  min-height:42px!important;
+  margin:12px auto 4px!important;
+}
+
+@media(max-width:700px){
+  .section4-booking-card{width:100%!important;padding:14px 14px 18px!important}
+  .section4-booking-card .booking-card-head{padding:16px 0 14px!important}
+  .section4-booking-card .booking-card-head h2{font-size:28px!important;line-height:1.08!important}
+  .section4-booking-card .booking-card-head p{font-size:11px!important}
+  .section4-booking-card .book-step{padding-left:12px!important;padding-right:12px!important}
+  .section4-booking-card .step-no{left:16px!important}
+  .section4-booking-card .step-content h3{font-size:20px!important}
+  .section4-booking-card .date-buttons{grid-template-columns:repeat(5,minmax(54px,70px))!important;gap:7px!important}
+  .section4-booking-card .date-btn{width:70px!important}
+  .section4-booking-card .slot-pills{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:430px){
+  .section4-booking-card .booking-card-head h2{font-size:24px!important}
+  .section4-booking-card .booking-card-head p{font-size:10px!important}
+  .section4-booking-card .step-content h3{font-size:18px!important}
+  .section4-booking-card .date-buttons{grid-template-columns:repeat(2,70px)!important;justify-content:center!important}
+  .section4-booking-card .book-step.wide{min-height:245px!important}
+}
+
+
+/* V64 — Section 4 containment + map visibility correction.
+   The booking card is allowed to determine the section height so it never
+   overlaps Section 5. The map iframe is explicitly visible/eager. */
+@media(min-width:1001px){
+  .design-s4{
+    height:auto!important;
+    min-height:0!important;
+    padding:46px 0 64px!important;
+    display:block!important;
+    background:#fff!important;
+    overflow:visible!important;
+  }
+  .section4-shell{
+    width:1185px!important;
+    max-width:calc(100% - 30px)!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:0 auto!important;
+    display:grid!important;
+    grid-template-columns:581px 575px!important;
+    gap:29px!important;
+    align-items:stretch!important;
+    overflow:visible!important;
+  }
+  .section4-hotspot{
+    width:581px!important;
+    height:auto!important;
+    min-height:900px!important;
+    align-self:stretch!important;
+    overflow:hidden!important;
+  }
+  .section4-booking-card{
+    width:575px!important;
+    height:auto!important;
+    min-height:900px!important;
+    align-self:stretch!important;
+    overflow:visible!important;
+    padding:16px 31px 24px!important;
+  }
+  .section4-location-head{
+    height:219px!important;
+    min-height:219px!important;
+    overflow:visible!important;
+  }
+  .section4-map{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    width:275px!important;
+    height:205px!important;
+    overflow:hidden!important;
+    z-index:5!important;
+  }
+  .section4-map iframe{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:205px!important;
+    border:0!important;
+  }
+  .section4-booking-card .booking-card-head{
+    height:auto!important;
+    min-height:86px!important;
+  }
+  .section4-booking-card form{overflow:visible!important}
+  .section4-booking-card .book-step.wide{
+    min-height:176px!important;
+    height:auto!important;
+  }
+  .section4-booking-card .slot-step-full{
+    min-height:158px!important;
+    height:auto!important;
+  }
+  .section4-booking-card .seat-step-full{
+    min-height:184px!important;
+    height:auto!important;
+  }
+  .section4-booking-card .booking-note{
+    height:auto!important;
+    min-height:32px!important;
+    overflow:visible!important;
+  }
+  .section4-booking-card .confirm-btn{
+    height:auto!important;
+    min-height:42px!important;
+    margin:12px auto 4px!important;
+  }
+}
+
+@media(max-width:1000px){
+  .design-s4{
+    height:auto!important;
+    min-height:0!important;
+    padding:34px 0 52px!important;
+    overflow:visible!important;
+  }
+  .section4-shell{
+    height:auto!important;
+    min-height:0!important;
+    align-items:stretch!important;
+    overflow:visible!important;
+  }
+  .section4-hotspot{
+    height:520px!important;
+    min-height:520px!important;
+  }
+  .section4-booking-card{
+    height:auto!important;
+    min-height:0!important;
+    overflow:visible!important;
+  }
+  .section4-location-head{
+    min-height:205px!important;
+  }
+  .section4-map{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+  .section4-map iframe{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+}
+
+/* V65 — Hotspot artwork fills the complete left Section 4 panel. */
+@media(min-width:1001px){
+  .section4-hotspot{
+    position:relative!important;
+    min-height:900px!important;
+    height:100%!important;
+    overflow:hidden!important;
+    background:#ed1c24!important;
+  }
+  .section4-hotspot .kolkata-map-art{
+    position:absolute!important;
+    inset:0!important;
+    right:auto!important;
+    top:auto!important;
+    width:100%!important;
+    height:100%!important;
+    z-index:2!important;
+    overflow:hidden!important;
+  }
+  .section4-hotspot .kolkata-map-art img{
+    display:block!important;
+    width:100%!important;
+    height:100%!important;
+    max-width:none!important;
+    max-height:none!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+  }
+  .section4-hotspot .hotspot-copy{z-index:7!important}
+  .section4-hotspot .hotspot-pins{z-index:8!important}
+  .section4-hotspot .hotspot-footer{z-index:9!important}
+}
+
+@media(max-width:1000px){
+  .section4-hotspot .kolkata-map-art{
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    right:auto!important;
+    top:auto!important;
+  }
+  .section4-hotspot .kolkata-map-art img{
+    width:100%!important;
+    height:100%!important;
+    max-width:none!important;
+    object-fit:cover!important;
+    object-position:center center!important;
+  }
+}
+
+
+/* V66: remove booking eyebrow text */
+.section4-booking-card .booking-card-head span { display:none !important; }
+
+/* V67 — final requested TCCC Condensed booking typography. */
+.section4-booking-card .booking-card-head h2 {
+  font-family:TCCCCondensed,TCCCHeadline !important;
+  font-size:31px !important;
+  line-height:1.05 !important;
+  font-weight:900 !important;
+  letter-spacing:.01em !important;
+  color:#d9272e !important;
+  margin:4px 0 5px !important;
+}
+
+.section4-booking-card .book-step .step-no {
+  font-family:TCCCCondensed,TCCCHeadline !important;
+  font-size:42px !important;
+  line-height:.9 !important;
+  font-weight:900 !important;
+  color:#d9272e !important;
+  background:#fff !important;
+  padding:0 8px !important;
+  top:-18px !important;
+  left:24px !important;
+  z-index:30 !important;
+}
+
+.section4-booking-card .book-step .step-content h3 {
+  font-family:TCCCCondensed,TCCCHeadline !important;
+  font-size:19px !important;
+  line-height:1.1 !important;
+  font-weight:900 !important;
+  color:#d9272e !important;
+  margin:0 0 12px !important;
+}
+
+
+/* V69 — Mobile artwork supplied by client for Sections 2 and 3.
+   Desktop artwork remains unchanged. */
+@media (max-width: 600px){
+  .design-s2{
+    background-image:url('/assets/section2-mobile.png') !important;
+    background-position:center top !important;
+    background-repeat:no-repeat !important;
+    background-size:100% 100% !important;
+    aspect-ratio:auto !important;
+    width:100% !important;
+    height:calc(100vw * 1825 / 2048) !important;
+    min-height:0 !important;
+    max-height:none !important;
+  }
+  .design-s3{
+    background-image:url('/assets/section3-mobile.png') !important;
+    background-position:center top !important;
+    background-repeat:no-repeat !important;
+    background-size:100% 100% !important;
+    aspect-ratio:auto !important;
+    width:100% !important;
+    height:calc(100vw * 1825 / 2048) !important;
+    min-height:0 !important;
+    max-height:none !important;
+  }
+}
+
+/* V71 — Mobile Section 3 exact artwork fit.
+   Use the supplied 2048×1825 artwork at its native aspect ratio so the
+   complete mobile composition is visible without crop/stretch from legacy rules. */
+@media (max-width:600px){
+  .lal-page .design-s3{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    aspect-ratio:2048 / 1825!important;
+    background-image:url('/assets/section3-mobile.png')!important;
+    background-repeat:no-repeat!important;
+    background-position:center top!important;
+    background-size:100% 100%!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+  }
+}
+
+/* V72 — Section 4 map artwork: supplied desktop + mobile map compositions */
+.kolkata-map-art{
+  overflow:hidden!important;
+}
+.kolkata-map-art picture{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+}
+.kolkata-map-art picture img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+}
+
+@media(min-width:1001px){
+  .section4-hotspot .kolkata-map-art{
+    position:absolute!important;
+    left:0!important;
+    right:auto!important;
+    top:0!important;
+    width:100%!important;
+    height:100%!important;
+    z-index:2!important;
+  }
+  /* V75: keep V72 artwork/viewport sizing exactly; shift only the desktop
+     artwork crop slightly left so the full-height map composition reads
+     better within the hotspot viewport. */
+  .section4-hotspot .kolkata-map-art picture img{
+    object-fit:cover!important;
+    object-position:65% center!important;
+  }
+  .section4-hotspot .hotspot-copy{z-index:6!important;}
+  .section4-hotspot .hotspot-footer{z-index:9!important;}
+}
+
+@media(max-width:600px){
+  .section4-hotspot .kolkata-map-art{
+    position:absolute!important;
+    inset:0!important;
+    width:100%!important;
+    height:100%!important;
+    z-index:2!important;
+  }
+  .section4-hotspot .kolkata-map-art picture img{
+    object-fit:cover!important;
+    object-position:center center!important;
+  }
+}
+
+
+/* V77 — Supplied hotspot pin artwork */
+.section4-hotspot .hotspot-pin{
+  display:block!important;
+  width:34px!important;
+  height:42px!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:translate(-50%,-50%)!important;
+}
+.section4-hotspot .hotspot-pin .hotspot-pin-icon{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:0!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  opacity:1!important;
+}
+.section4-hotspot .hotspot-pin span,
+.section4-hotspot .hotspot-pin:after{
+  display:none!important;
+  content:none!important;
+}
+.section4-hotspot .hotspot-pin:hover .hotspot-pin-icon,
+.section4-hotspot .hotspot-pin.active .hotspot-pin-icon{
+  transform:scale(1.12)!important;
+  transform-origin:center center!important;
+}
+@media(max-width:600px){
+  .section4-hotspot .hotspot-pin{
+    width:28px!important;
+    height:36px!important;
+    transform:translate(-50%,-50%)!important;
+  }
+}
+
+/* V79 — Supplied date-frame artwork. Remove the previous CSS border and
+   use the supplied decorative frame while keeping all date text black. */
+.section4-booking-card .date-btn{
+  position:relative!important;
+  border:0!important;
+  border-radius:0!important;
+  background:#fff url('../assets/date-frame.png') center center / 100% 100% no-repeat!important;
+  box-shadow:none!important;
+  color:#000!important;
+  overflow:hidden!important;
+}
+.section4-booking-card .date-btn span,
+.section4-booking-card .date-btn strong,
+.section4-booking-card .date-btn small{
+  position:relative!important;
+  z-index:2!important;
+  color:#000!important;
+}
+.section4-booking-card .date-btn.selected{
+  border:0!important;
+  background:#fff url('../assets/date-frame.png') center center / 100% 100% no-repeat!important;
+  box-shadow:none!important;
+  color:#000!important;
+}
+.section4-booking-card .date-btn.selected span,
+.section4-booking-card .date-btn.selected strong,
+.section4-booking-card .date-btn.selected small{
+  color:#000!important;
+}
+.section4-booking-card .date-btn:hover{
+  border:0!important;
+  box-shadow:none!important;
+  transform:none!important;
+}
+
+/* V80 — Date frame must remain the supplied square artwork, never stretched into a rectangle. */
+.section4-booking-card .date-btn{
+  flex:0 0 94px !important;
+  width:94px !important;
+  height:94px !important;
+  min-width:94px !important;
+  min-height:94px !important;
+  max-width:94px !important;
+  max-height:94px !important;
+  aspect-ratio:1 / 1 !important;
+  padding:8px !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background-color:#fff !important;
+  background-image:url('../assets/date-frame.png') !important;
+  background-repeat:no-repeat !important;
+  background-position:center center !important;
+  background-size:100% 100% !important;
+  box-shadow:none !important;
+  overflow:hidden !important;
+}
+.section4-booking-card .date-btn.selected,
+.section4-booking-card .date-btn:hover{
+  border:0 !important;
+  box-shadow:none !important;
+  background-image:url('../assets/date-frame.png') !important;
+  background-size:100% 100% !important;
+}
+.section4-booking-card .date-buttons{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:10px !important;
+  overflow:visible !important;
+}
+@media(max-width:600px){
+  .section4-booking-card .date-btn{
+    flex:0 0 82px !important;
+    width:82px !important;
+    height:82px !important;
+    min-width:82px !important;
+    min-height:82px !important;
+    max-width:82px !important;
+    max-height:82px !important;
+    aspect-ratio:1 / 1 !important;
+    padding:7px !important;
+  }
+}

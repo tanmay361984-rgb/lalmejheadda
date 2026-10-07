@@ -1,0 +1,21 @@
+# Production secrets / configuration
+config.php
+.env
+.env.*
+!.env.example
+
+# Runtime logs
+*.log
+logs/
+
+# Database dumps / backups
+*.sql
+*.sql.gz
+*.dump
+*.bak
+backup/
+backups/
+
+# Server/runtime files
+.DS_Store
+Thumbs.db
