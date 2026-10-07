@@ -42,7 +42,7 @@ function admin_upload_location_image($field, $old='') {
     $dir=dirname(__DIR__).'/uploads'; if(!is_dir($dir)) mkdir($dir,0755,true);
     $name='loc_'.date('YmdHis').'_'.bin2hex(random_bytes(4)).'.'.$ext;
     if(!move_uploaded_file($_FILES[$field]['tmp_name'],$dir.'/'.$name)) throw new Exception('Unable to upload image.');
-    if ($old && str_starts_with($old,'uploads/') && is_file(dirname(__DIR__).'/'.$old)) @unlink(dirname(__DIR__).'/'.$old); // nosemgrep: php.lang.security.unlink-use.unlink-use -- path is restricted to the uploads/ prefix and existing file
+    // nosemgrep: unlink-use // Stored path is restricted to the uploads/ prefix and an existing file.    if ($old && str_starts_with($old,'uploads/') && is_file(dirname(__DIR__).'/'.$old)) @unlink(dirname(__DIR__).'/'.$old);
     return 'uploads/'.$name;
 }
 
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
     if ($action==='location_delete') {
         $id=(int)($_POST['id']??0); $st=$pdo->prepare('SELECT banner FROM locations WHERE id=?'); $st->execute([$id]); $old=$st->fetch();
         $pdo->prepare('DELETE FROM locations WHERE id=?')->execute([$id]);
-        if($old && !empty($old['banner']) && str_starts_with($old['banner'],'uploads/') && is_file(dirname(__DIR__).'/'.$old['banner'])) @unlink(dirname(__DIR__).'/'.$old['banner']);
+        // nosemgrep: unlink-use // Stored banner path is restricted to the uploads/ prefix and an existing file.        if($old && !empty($old['banner']) && str_starts_with($old['banner'],'uploads/') && is_file(dirname(__DIR__).'/'.$old['banner'])) @unlink(dirname(__DIR__).'/'.$old['banner']);
         $msg='Location removed successfully. Related slots and bookings were also removed.';
     }
 
