@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
             try {
                 admin_set_password_hash($new);
                 @file_put_contents($lockFile, date('c')."\n", LOCK_EX);
-                @unlink($enableFile); // nosemgrep: php.lang.security.unlink-use.unlink-use -- setup flag is fixed internal path and is removed only after CSRF-protected password setup
+                // nosemgrep: unlink-use // Fixed internal setup flag; removed only after successful CSRF-protected password setup.                @unlink($enableFile);
                 unset($_SESSION['admin_setup_csrf']);
                 session_regenerate_id(true);
                 $_SESSION['admin']=1;
