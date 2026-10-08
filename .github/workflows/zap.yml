@@ -5,7 +5,6 @@ on:
 
 permissions:
   contents: read
-  security-events: write
 
 jobs:
   zap:
@@ -16,9 +15,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
 
+      - name: Test live-site connectivity
+        run: |
+          echo "Testing: https://lightblue-barracuda-389291.hostingersite.com"
+          curl -I -L --max-time 30 \
+            https://lightblue-barracuda-389291.hostingersite.com
+
       - name: Run OWASP ZAP Baseline Scan
         uses: zaproxy/action-baseline@de8ad967d3548d44ef623df22cf95c3b0baf8b25 # v0.15.0
-        continue-on-error: true
         with:
           target: https://lightblue-barracuda-389291.hostingersite.com
           allow_issue_writing: false
